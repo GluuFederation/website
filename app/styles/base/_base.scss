@@ -1,0 +1,61 @@
+/*
+    Base styles
+*/
+
+body{
+    -webkit-font-smoothing: antialiased;
+    //font-family: $font-1;
+    font-size:16px;
+}
+
+.top-bar-top .container-fluid{
+    max-width:1224px;
+}
+@media (min-width: 1280px) {
+    .container-fluid{
+	    max-width:1224px;
+    }
+}
+
+//text
+p{
+    margin-bottom:$baseline;
+    
+}
+
+a{
+    text-decoration:none;
+    @include btn-text(#3ab4df);
+    &:link, &:hover, &:active, &:visited{
+        text-decoration:none;
+    }
+}
+
+blockquote{
+    margin:0;
+    font-style:italic;
+}
+
+a:focus{
+    outline:none;
+}
+.btn:focus{
+    outline:none;
+}
+a:hover{
+    text-decoration:none;
+}
+i{
+    display:inline-block;
+}
+
+/*can be added to normalize.css*/
+//this means that if the width is 100px and padding is 20px, the width will remain to be 100px
+/*
+*,
+*:before,
+*:after{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}*/

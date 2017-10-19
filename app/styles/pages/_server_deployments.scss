@@ -1,0 +1,227 @@
+/*server deployments*/
+/*.container.main{
+    padding-top:52px;
+}*/
+.deployments{
+    padding-top:52px;
+    padding-bottom:113px;
+    
+    h2{
+        font-size:30px;
+        line-height:1em;
+        margin:0;
+        font-weight:400;
+        color:#1e2638;
+        text-transform:uppercase;
+        text-align:center;
+    }
+    h3{
+        font-size:24px;
+        line-height:1em;
+        font-weight:300;
+        color:#262626;
+        text-transform:uppercase;
+        margin:0;
+        margin-bottom:29px;
+        padding:0;
+    }
+    p, ul.have-questions-list{
+        font-size:14px;
+        font-weight:400;
+        color:#737373;
+        margin:0;
+        margin-bottom:34px;
+    }
+    ul.have-questions-list{
+        padding-left:18px;
+        padding:0;
+        li{
+            list-style:none !important;
+            padding-left:19px !important;
+            position:relative;
+            margin-bottom:8px;
+        }
+    }
+    .panel.panel-default{
+        border:none;
+        margin:0;
+        margin-bottom:77px;
+        .panel-heading{
+            border:none;
+            background:none;
+            padding:0;
+            
+            .panel-title{
+                border-bottom:1px solid #bababa;
+                text-align:center;
+                padding:0;
+                height:49px;
+                a{
+                    display:inline-block;
+                    margin:0;
+                    background-color:#e9e9e9;
+                    padding:14px 12px 16px 10px;
+                    overflow:hidden;
+                    &:link, &:hover, &:active, &:visited{
+                        text-decoration:none;
+                    }
+                }
+                .toggle-text{
+                    font-size:18px;
+                    line-height:1em;
+                    color:#585757;
+                    font-weight:300;
+                }
+                .toggle-text, .icon-wrapper{
+                    display:inline-block;
+                    float:left;
+                }
+                .icon-wrapper{
+                    line-height:18px;
+                    vertical-align:middle;
+                    margin-left:7px;
+                }
+            }
+        }
+        .panel-body{
+            padding:0;
+            
+        }
+    }
+    .release{
+        margin-top:83px;
+        h3{
+            @media (max-width: $screen-sm) {
+                display:block;
+                margin-bottom:10px;
+                text-align:center;
+            }
+            display:inline-block;
+        }
+        h3 + a{
+            font-size:16px;
+            font-weight:400;
+            @media (max-width: $screen-sm) {
+                display:block;
+                text-align:center;
+            }
+            @media (min-width: $screen-sm) {
+                margin-left:29px;
+            }
+            &:link, &:hover, &:active, &:visited{
+                color:#085394;
+                text-decoration:none;
+            }
+        }
+    }
+    .release-header{
+        background-color:#eeeeee;
+    }
+    .release-row-wrapper{
+        border-bottom:1px solid #d9d9d9;
+        @media (max-width: $screen-sm) {
+            .inner-wrapper{
+                position:relative;
+                div{
+                    padding-left:100px;
+                }
+            }
+            .inner-wrapper:before {
+                content:attr(data-feature) ':';
+                position:absolute;
+                color:#818181;
+            }
+        }
+        .buy-btn{
+            display:inline-block;
+            background-color:#007dc5;
+            padding:10px 16px;
+            font-size:14px;
+            font-weight:400;
+            line-height:1em;
+            text-transform:uppercase;
+            @include common-border-radius(2px);
+            @media (max-width: $screen-sm) {
+                display:block;
+                text-align:center;
+            }
+            @media (min-width: $screen-sm) {
+                //.pull-right();
+            }
+            &:link, &:hover, &:active, &:visited{
+                color:#fff;
+                text-decoration:none;
+            }
+        }
+    }
+    .release-header, .release-row-wrapper{
+        
+        .inner-wrapper{
+            padding:15px 10px 17px 10px;
+        }
+        
+    }
+    .release-row-wrapper{
+        .inner-wrapper{
+            padding:15px 10px 17px 10px;
+            overflow:hidden;
+            line-height:30px;
+            vertical-align:middle;
+            div{
+                display:inline-block;
+            }
+        }
+    }
+    .community-commercial-btns{
+        margin:51px auto 65px auto;
+        text-align:center;
+        text-transform:uppercase;
+        overflow:hidden;
+        width:188px;
+        @media (min-width: 420px) {
+            width:384px;
+        }
+        @media (min-width: $screen-sm) {
+            width:414px;
+        }
+        a{
+            font-size:15px;
+            line-height:1em;
+            display:block;
+            width:188px;
+            @media (min-width: 420px) {
+                float:left;
+            }
+            padding:25px 0px 24px 0px;
+            width:186px;
+            text-align:center;
+            @include common-border-radius(3px);
+            &:link, &:hover, &:active, &:visited{
+                color:#fff;
+                text-decoration:none;
+            }
+            span{
+                font-family: 'Open Sans';
+                font-style: italic;
+                font-weight: 300;
+                text-transform: none;
+            }
+        }
+        .community-btn{
+            background-color:#01a161;
+            margin-bottom:20px;
+            @media (min-width: 420px) {
+                margin-right:10px;
+            }
+            @media (min-width: $screen-sm) {
+                margin-right:40px;
+                margin-bottom:0;
+            }
+        }
+        .commercial-btn{
+            background-color:#007dc5;
+            
+        }
+    }
+    
+}// deployments

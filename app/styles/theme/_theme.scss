@@ -1,0 +1,54 @@
+/*
+    Theme styles
+*/
+
+//new vip support page
+//color variables
+$purple-mountain-majesty: #8A74B9;
+$ocean-green: #4CB992;
+$curious-blue: #3499E0;
+$tacao: #efb57c;
+$tacao-dark:darken($tacao, 25%);
+$tacao-dark2:darken($tacao, 10%);
+$ebony-clay: #2B3645;
+$jade: #00B372;
+$concord: #807F7E;
+$tundora: #4A4A4A;
+$pampas: #F7F5F3;
+$mercury: #E5E5E5;
+$alabaster: #F9F9F9;
+$boulder: #777777;
+$mineShaft: #3d3d3d;
+$scorpion: #5a5a5a;
+$gallery: #eeeeee;
+$pampas: #f6f5f3;
+$emperor: #525252;
+$bostonBlue: #428BCA;
+$concrete: #f2f2f2;
+$athens-gray: #eff1f4;
+$emperor: #555555;
+$bondi-blue: #018cb3;
+$caribbean-green: #00cb81;
+$bondi-blue: #018CB3;
+$dodger-blue: #3d8af7;
+$orange: #ff6624;
+$outer-space: #273134;
+$pacific-blue: #0097c1;
+$cerulean: #02a8d6;
+$greenHaze: #01a161;
+$cerulean2: #00aeef;
+
+/*bg colors*/
+.bondi-blue{
+    background-color:$bondi-blue;
+}//in use, /partners-overview
+.pampas-bg{
+    background-color:$pampas;
+}//in use, /partners-overview
+.pacific-blue{
+    background-color:$pacific-blue;
+}
+/*border colors*/
+.mercury-bc{
+    border-color:$mercury;
+}//in use, /partners-overview

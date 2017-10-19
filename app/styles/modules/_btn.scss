@@ -1,0 +1,307 @@
+/*
+    Button styles
+*/
+@mixin blue-btn{
+        font-size:15px;
+        font-weight:300;
+        background-color:$jade;
+        display:inline-block;
+        line-height:1em;
+        padding:25px 46px 24px 42px;
+        text-transform:uppercase;
+        @include common-border-radius(3px);
+        border:none;
+        &:link, &:hover, &:active, &:visited{
+            color:#fff;
+            text-decoration:none;
+        }     
+    }
+
+.schedule-btn{
+    a{
+        display:inline-block;
+        @include blue-btn();
+        padding:7px 9px 8px 9px;
+        @include common-border-radius(3px);
+    }
+}//in use, top menu button
+.green-btn{
+    font-size:16px;
+    color:#fff;
+    border:none;
+    background-color:#27ba38;
+    border-radius:3px;
+    line-height:1em;
+    padding:8px 11px 9px 15px;
+}
+.expand-btn{
+    font-size:16px;
+    color:#fff;
+    border:none;
+    background:none;
+    border-radius:3px;
+    line-height:1em;
+    padding:8px 11px;
+}
+.gray-btn-wrapper{
+    text-align:center;
+}
+.btns-wrapper{
+    overflow:hidden;
+    .btn{
+        float:left;
+        margin-right:10px;
+    }
+}
+.btn:not(.btn-primary, .btn-success){
+    
+    font-size: 16px !important;
+    line-height: 16px !important;
+    text-transform:none !important;
+    display:inline-block;
+    margin-top:10px;
+    text-align:left;
+}
+.bondiBlue-btn, .gray-btn,.blue-btn, .blue-brd-btn, .white-btn{
+    display:inline-block;
+    padding:14px 13px 13px 15px;
+    line-height:1em;
+    border:1px solid #dadada;
+    font-size:18px;
+        @media (min-width: $screen-sm) {
+            font-size:20px;
+        }
+    text-transform:uppercase;
+    &:link, &:hover, &:active, &:visited{
+        color:#333;
+        text-decoration:none;
+    }
+        
+}
+.blue-brd-btn{
+    background-color:#007dc5;
+    border:1px solid #fff;
+    font-size:15px;
+    text-transform:none;
+    @include common-border-radius(3px);
+    &:link, &:hover, &:active, &:visited{
+        color:#fff;
+    }
+}
+.white-btn{
+    background-color:#fff;
+    border:1px solid #fff;
+    font-size:15px;
+    text-transform:none;
+    @include common-border-radius(3px);
+    &:link, &:hover, &:active, &:visited{
+        color:#1e2638;
+    }
+}//in use, /gluu-server
+
+.bondiBlue-btn.md{
+    @include blue-btn();
+    background-color:#018cb3;
+}
+.blue-btn.md{
+    @include blue-btn();
+    input[type="submit"], input[type="submit"].wpcf7-form-control.wpcf7-submit{
+        background:none; 
+        border:none; 
+        line-height:1.3em; 
+        color:#fff;
+    }
+}//in use, on pages: /edu, /gluu-server
+.contact-button-wrapper{
+    margin-top:10px;
+}
+input[type="submit"].wpcf7-form-control.wpcf7-submit.blue-btn.md{
+    color:#fff;
+}
+.bondiBlue-btn.md, .gray-btn.md, .blue-btn.md, .blue-btn.md.lwc{
+    padding:14px 13px 13px 14px;
+    font-size:18px;
+    @media (min-width: $screen-sm) {
+        padding:7px 9px 8px 9px;
+        font-size:13px;
+        span{
+            margin-top:4px;
+            }
+        }
+    @media (min-width: $screen-md) {
+        padding:14px 13px 13px 14px;
+        font-size:18px;
+        span{
+            margin-top:0px;
+            }
+        }
+}
+.blue-btn.md.lwc{
+    @media (min-width: $screen-md) {
+        padding:8px 13px 11px 14px;
+        }
+}
+.bondiBlue-btn.md, .blue-btn.md{
+    font-size:15px;
+    @media (min-width: $screen-md) {
+        font-size:15px;
+    }
+}
+.blue-btn.md.lwc{
+    text-transform:none;
+    font-size:20px;
+    input[type="submit"].wpcf7-form-control.wpcf7-submit{
+        font-size:20px;
+        line-height:1em;
+    }    
+}
+.submit-wrapper{
+    height:39px;
+}
+.btn-wrapper-1{
+    margin-bottom:20px;
+}
+.orange-btn, .dodger-blue-btn{
+    font-size:15px;
+    font-weight:300;
+    display:inline-block;
+    line-height:1em;
+    padding:14px 13px 13px 14px;
+    @include common-border-radius(3px);
+    border:none;
+    &:link, &:hover, &:active, &:visited{
+        color:#fff;
+        text-decoration:none;
+    }
+}
+.dodger-blue-btn{
+    background-color:$dodger-blue;
+}
+.orange-btn{
+    background-color:$orange;   
+}
+.green.md{
+    padding:14px 13px 13px 14px;
+    @media (min-width: $screen-sm) {
+        padding:7px 9px 8px 9px;
+        
+        span{
+            margin-top:4px;
+            font-size:13px;
+            }
+        i{
+            font-size:13px;
+        }
+        }
+    @media (min-width: $screen-md) {
+        padding:14px 13px 13px 14px;
+        span{
+            font-size:16px;
+            margin-top:0px;
+            }
+        i{
+            font-size:16px;
+        }
+        }
+}
+/*btn*/
+.general-chevron, .general-white-chevron{
+    width:12px;
+    height:17px;
+}
+.general-chevron_xs{
+    width:6px;
+    height:9px;
+}
+.gray-btn{
+    span{
+        display:inline-block;
+        margin-right:10px;
+    }
+    span, i{
+        float:left;
+    }
+    i{
+        margin-top:2px;
+    }
+}
+.gray-btn.md{
+    span{
+        margin-right:5px;
+    }
+}
+.gluu-btn{
+    display:inline-block;
+    line-height:1em;
+    padding:18px 16px;
+    @include common-border-radius(3px);
+    &:link, &:hover, &:active, &:visited{
+        color:#fff;
+        text-decoration:none;
+    }
+    span{
+        display:inline-block;
+        margin-right:9px;   
+    }
+    span, i{
+        font-size:20px;
+        font-weight:400;
+    }
+}//in use on, /partners-overview
+.footer-btns,
+.hero-btns{
+    a{
+        display:inline-block;
+        text-transform:uppercase;
+        font-size:12px;
+        line-height:1em;
+        padding:15px 26px 16px 26px;
+    } 
+}
+.footer-btns{
+    a{
+        padding:19px 26px 20px 26px;
+    }
+}
+.pickled-bluewood-btn{
+    background:#34495e;
+}//in use on home
+.green-haze-btn{
+    background:#01a161;
+}//in use on home
+
+.btn17{
+    font-family: 'Open Sans';
+    font-size:12px;
+    font-weight:400;
+    display:inline-block;
+    padding:19px 32px 20px 32px;
+    line-height:1em;
+    text-transform:uppercase;
+}//in use
+.solid.cerulean-btn{
+    border:2px solid #00aeef;
+    &:link, &:hover, &:active, &:visited{
+        background:#00aeef;
+        color:#fff;
+    }
+}//in use
+.see-through.cerulean-btn{
+    border:2px solid #00aeef;
+    &:link, &:hover, &:active, &:visited{
+        color:#00aeef;
+    } 
+}//in use
+/*buttons in the footer*/
+.solid.greenHaze-btn{
+    &:link, &:hover, &:active, &:visited{
+        background:$greenHaze;
+        color:#fff;
+    }
+}//in use
+.solid.cerulean2-btn{
+    &:link, &:hover, &:active, &:visited{
+        background:$cerulean2;
+        color:#fff;
+    } 
+}//in use

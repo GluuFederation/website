@@ -1,0 +1,485 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RSA</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+<!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <!-- endbuild -->
+
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="js/respond.min.js"></script>
+</head>
+
+<body>
+
+<div class="main-wrapper">    
+
+<div class="fixedtop-wrapper">
+<div id="fixedtop">
+<div class="container">
+    <div class="row">
+		    <div class="col-sm-12 search-row">
+		         <div class="search-form-wrapper">
+		            <form method="get" id="searchform" class="main-searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+		<input type="text" class="field" dir="auto" name="s" id="s" placeholder="Enter Search" />
+		<button class="submit btn btn-search glyphicon glyphicon-search" id="searchsubmit"></button>
+                    </form>
+		         </div>
+		    </div>
+    </div>
+</div>
+
+</div><!--end #fixedtop-->
+
+<header class="top-bar nav-panel">
+<div class="top-bar-top">
+    <div class="fluid-container">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav class="top-nav-wrapper">
+                    <ul class="top-nav">
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#">Newsport</a>
+                                </li>
+                                <li>
+                                    <a href="#">search</a>
+                                </li>
+                    </ul>
+                </nav>        
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top-bar-inner">    
+<div class="hidden-xs fluid-container">
+		
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="front-logo">
+                <a href="#">
+                    <img src="images/gl.png" class="img-responsive" />
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-10">
+            
+            <div class="row">
+            <div class="col-sm-12">
+                <nav class="front-nav-wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">Open source</a>
+                        </li>
+                        <li>
+                            <a href="#">Gluu server</a>
+                        </li>
+                        <li>
+                            <a href="#">Clusters</a>
+                        </li>
+                        <li>
+                            <a href="#">EDU</a>
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="schedule-btn">
+                            <a href="#">
+                                Deploy The Gluu Server
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>     
+    </div>
+    <!--<div class="row">
+        <div class="col-sm-12">
+            <hr />
+        </div>
+    </div>-->
+    
+</div><!-- .container-->
+</div><!-- .top-bar-inner-->
+
+    
+<div class="visible-xs container">    
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-default nav-panel" role="navigation">
+                    
+                    <div class="navbar-header">
+        				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse">
+        					<span class="sr-only">Toggle navigation</span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        				</button>
+        		
+                        <a class="navbar-brand" id="brand-name" href="#">
+                            <img src="images/logo.png" alt="gluu logo" />
+                        </a>
+                    </div>
+                    
+            		<div class="collapse navbar-collapse" id="navbar-ex1-collapse">
+            			<ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#">Open source</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gluu server</a>
+                                </li>
+                                <li>
+                                    <a href="#">Clusters</a>
+                                </li>
+                                <li>
+                                    <a href="#">EDU</a>
+                                </li>
+                                <li>
+                                    <a href="#">Resources</a>
+                                </li>
+                                <li>
+                                    <a href="#">Schedule a demo</a>
+                                </li>
+                            </ul>
+            		</div><!-- end .navbar-ex1-collapse-->			
+            </nav>
+        </div>
+    </div>
+   		
+    <!--<div class="row">
+        <div class="col-sm-12">
+            <hr />
+        </div>
+    </div>-->
+</div><!-- .container-->
+<div class="top-bar-shadow"></div> 
+</header>
+</div><!-- end .fixedtop-wrapper-->
+
+<!--<div class="pages-banner-wrapper">
+<div class="pages-banner">
+    <div class="container">
+        <div class="row">
+            <div id="info" class="col-sm-12">
+                <div class="banner-inner">
+                    <div class="banner-content">
+                        <h1>
+                            Vip Support
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>-->
+<!--
+Support Pricing Guide 
+    Gluu offers a variety of support options to help organizations of all sizes deliver a secure and reliable access management service.
+-->
+
+<div class="pages-banner-wrapper">
+<div class="pages-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-12" id="info">
+                <div class="banner-inner">
+                    <div class="banner-content">
+                        <h1>
+                        RSA customers: we can help!
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<section>
+    <div class="container main">
+    	<div class="row">
+    		<div class="col-sm-7" id="top-point">
+        		<h3>Smooth Transition for RSA customers</h3>
+        		<p>You were probably surprised to learn that EMC (and along with it RSA Security) has been acquired by Dell — we were too. We’re here to help though, and in the process, we’d like to not only migrate your single sign-on services to our industry leading free open source identity and access management platform, but also save you some of the money you’ve invested into your RSA infrastructure.</p>
+        		<p>Sometimes things change at a business, and we’re here to help you get past that.</p>
+        		<p>Contact us to learn more about our special offerings for RSA customers. We’re standing by to answer questions and explain an exclusive promotional offer for current RSA customers that will credit you back dollars you spent on RSA Access Manager and apply them to a new Gluu Server support subscription. </p>
+        		<p>We can also introduce you to additional services and products to meet your needs for today and tomorrow.</p>
+    		</div>
+    		<div class="col-sm-4 col-sm-offset-1 form-wrapper">
+        		<form novalidate="novalidate" class="wpcf7-form" method="post" action="/company/contact-us/#wpcf7-f5-p158-o1">
+            		<div>
+            		<span class="wpcf7-form-control-wrap mc4wp-FNAME"><input type="text" aria-invalid="false" aria-required="true" id="fname" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" size="40" value="" name="mc4wp-FNAME" placeholder="First Name"></span>
+            		</div>
+            		<div>
+            		<span class="wpcf7-form-control-wrap mc4wp-FNAME"><input type="text" aria-invalid="false" aria-required="true" id="fname" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" size="40" value="" name="mc4wp-FNAME" placeholder="Last Name"></span>
+            		</div>
+            		<div>
+                	<span class="wpcf7-form-control-wrap mc4wp-EMAIL"><input type="email" aria-invalid="false" aria-required="true" id="email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control" size="40" value="" name="mc4wp-EMAIL" placeholder="Work Email"></span>	
+            		</div>
+            		<div>
+                    <span class="wpcf7-form-control-wrap mc4wp-PHONE"><input type="text" aria-invalid="false" aria-required="true" id="phone" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" size="40" value="" name="mc4wp-PHONE" placeholder="Phone"></span>
+            		</div>
+            		<div>
+                		<span class="wpcf7-form-control-wrap mc4wp-JOB"><input type="text" aria-invalid="false" aria-required="true" id="job" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" size="40" value="" name="mc4wp-JOB" placeholder="Job Title"></span>
+            		</div>
+            		<div>
+                    <span class="wpcf7-form-control-wrap mc4wp-COMPANY"><input type="text" aria-invalid="false" aria-required="true" id="cname" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control" size="40" value="" name="mc4wp-COMPANY" placeholder="Company"></span>
+            		</div>
+            		<div>
+                	<span class="wpcf7-form-control-wrap menu-329"><select aria-invalid="false" aria-required="true" id="country" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required country form-control" name="menu-329"><option value="">Select Country</option><option value="United States">United States</option><option value="Canada">Canada</option><option value="Afghanistan">Afghanistan</option><option value="Akrotiri">Akrotiri</option><option value="Albania">Albania</option><option value="Algeria">Algeria</option><option value="American Samoa">American Samoa</option><option value="Andorra">Andorra</option><option value="Angola">Angola</option><option value="Anguilla">Anguilla</option><option value="Antarctica">Antarctica</option><option value="Antigua and Barbuda">Antigua and Barbuda</option><option value="Argentina">Argentina</option><option value="Armenia">Armenia</option><option value="Aruba">Aruba</option><option value="Ashmore and Cartier Island">Ashmore and Cartier Island</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Azerbaijan">Azerbaijan</option><option value="Bahrain">Bahrain</option><option value="Bangladesh">Bangladesh</option><option value="Barbados">Barbados</option><option value="Bassas da India">Bassas da India</option><option value="Belarus">Belarus</option><option value="Belgium">Belgium</option><option value="Belize">Belize</option><option value="Benin">Benin</option><option value="Bermuda">Bermuda</option><option value="Bhutan">Bhutan</option><option value="Bolivia">Bolivia</option><option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option><option value="Botswana">Botswana</option><option value="Bouvet Island">Bouvet Island</option><option value="Brazil">Brazil</option><option value="British Indian Ocean Territory">British Indian Ocean Territory</option><option value="British Virgin Islands">British Virgin Islands</option><option value="Brunei">Brunei</option><option value="Bulgaria">Bulgaria</option><option value="Burkina Faso">Burkina Faso</option><option value="Burma">Burma</option><option value="Burundi">Burundi</option><option value="Cambodia">Cambodia</option><option value="Cameroon">Cameroon</option><option value="Canada">Canada</option><option value="Cape Verde">Cape Verde</option><option value="Cayman Islands">Cayman Islands</option><option value="Central African Republic">Central African Republic</option><option value="Chad">Chad</option><option value="Chile">Chile</option><option value="China">China</option><option value="Christmas Island">Christmas Island</option><option value="Clipperton Island">Clipperton Island</option><option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option><option value="Colombia">Colombia</option><option value="Comoros">Comoros</option><option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option><option value="Congo, Republic of the">Congo, Republic of the</option><option value="Cook Islands">Cook Islands</option><option value="Coral Sea Islands">Coral Sea Islands</option><option value="Costa Rica">Costa Rica</option><option value="Cote d'lvoire">Cote d'lvoire</option><option value="Croatia">Croatia</option><option value="Cuba">Cuba</option><option value="Cyprus">Cyprus</option><option value="Czech Republic">Czech Republic</option><option value="Denmark">Denmark</option><option value="Dhekelia">Dhekelia</option><option value="Djibouti">Djibouti</option><option value="Dominica">Dominica</option><option value="Dominican Republic">Dominican Republic</option><option value="Ecuador">Ecuador</option><option value="Egypt">Egypt</option><option value="El Salvador">El Salvador</option><option value="Equatorial Guinea">Equatorial Guinea</option><option value="Eritrea">Eritrea</option><option value="Estonia">Estonia</option><option value="Ethiopia">Ethiopia</option><option value="Europa Island">Europa Island</option><option value="Falkland Islands (Islas Malvinas)">Falkland Islands (Islas Malvinas)</option><option value="Faroe Islands">Faroe Islands</option><option value="Fiji">Fiji</option><option value="Finland">Finland</option><option value="France">France</option><option value="French Guiana">French Guiana</option><option value="French Polynesia">French Polynesia</option><option value="French Southern and Antarctic Lands">French Southern and Antarctic Lands</option><option value="Gabon">Gabon</option><option value="Gambia, The">Gambia, The</option><option value="Gaza Strip">Gaza Strip</option><option value="Georgia">Georgia</option><option value="Germany">Germany</option><option value="Ghana">Ghana</option><option value="Gibraltar">Gibraltar</option><option value="Glorioso Islands">Glorioso Islands</option><option value="Greece">Greece</option><option value="Greenland">Greenland</option><option value="Grenada">Grenada</option><option value="Guadeloupe">Guadeloupe</option><option value="Guam">Guam</option><option value="Guatemala">Guatemala</option><option value="Guernsey">Guernsey</option><option value="Guinea">Guinea</option><option value="Guinea-Bissau">Guinea-Bissau</option><option value="Guyana">Guyana</option><option value="Haiti">Haiti</option><option value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option><option value="Holy See (Vatican City)">Holy See (Vatican City)</option><option value="Honduras">Honduras</option><option value="Hong Kong">Hong Kong</option><option value="Hungary">Hungary</option><option value="Iceland">Iceland</option><option value="India">India</option><option value="Indonesia">Indonesia</option><option value="Iran">Iran</option><option value="Iraq">Iraq</option><option value="Ireland">Ireland</option><option value="Isle of Man">Isle of Man</option><option value="Israel">Israel</option><option value="Italy">Italy</option><option value="Jamaica">Jamaica</option><option value="Jan Mayen">Jan Mayen</option><option value="Japan">Japan</option><option value="Jersey">Jersey</option><option value="Jordan">Jordan</option><option value="Juan de Nova Island">Juan de Nova Island</option><option value="Kazakhstan">Kazakhstan</option><option value="Kenya">Kenya</option><option value="Kiribati">Kiribati</option><option value="Korea, North">Korea, North</option><option value="Korea, South">Korea, South</option><option value="Kuwait">Kuwait</option><option value="Kyrgyzstan">Kyrgyzstan</option><option value="Laos">Laos</option><option value="Latvia">Latvia</option><option value="Lebanon">Lebanon</option><option value="Lesotho">Lesotho</option><option value="Liberia">Liberia</option><option value="Libya">Libya</option><option value="Liechtenstein">Liechtenstein</option><option value="Lithuania">Lithuania</option><option value="Luxembourg">Luxembourg</option><option value="Macau">Macau</option><option value="Macedonia">Macedonia</option><option value="Madagascar">Madagascar</option><option value="Malawi">Malawi</option><option value="Malaysia">Malaysia</option><option value="Maldives">Maldives</option><option value="Mali">Mali</option><option value="Malta">Malta</option><option value="Marshall Islands">Marshall Islands</option><option value="Martinique">Martinique</option><option value="Mauritania">Mauritania</option><option value="Mauritius">Mauritius</option><option value="Mayotte">Mayotte</option><option value="Mexico">Mexico</option><option value="Micronesia, Federated States of">Micronesia, Federated States of</option><option value="Moldova">Moldova</option><option value="Monaco">Monaco</option><option value="Mongolia">Mongolia</option><option value="Montserrat">Montserrat</option><option value="Morocco">Morocco</option><option value="Mozambique">Mozambique</option><option value="Namibia">Namibia</option><option value="Nauru">Nauru</option><option value="Navassa Island">Navassa Island</option><option value="Nepal">Nepal</option><option value="Netherlands">Netherlands</option><option value="Netherlands Antilles">Netherlands Antilles</option><option value="New Caledonia">New Caledonia</option><option value="New Zealand">New Zealand</option><option value="Nicaragua">Nicaragua</option><option value="Niger">Niger</option><option value="Nigeria">Nigeria</option><option value="Niue">Niue</option><option value="Norfolk Island">Norfolk Island</option><option value="Northern Mariana Islands">Northern Mariana Islands</option><option value="Norway">Norway</option><option value="Oman">Oman</option><option value="Pakistan">Pakistan</option><option value="Palau">Palau</option><option value="Panama">Panama</option><option value="Papua New Guinea">Papua New Guinea</option><option value="Paracel Islands">Paracel Islands</option><option value="Paraguay">Paraguay</option><option value="Peru">Peru</option><option value="Philippines">Philippines</option><option value="Pitcairn Islands">Pitcairn Islands</option><option value="Poland">Poland</option><option value="Portugal">Portugal</option><option value="Puerto Rico">Puerto Rico</option><option value="Quatar">Quatar</option><option value="Reunion">Reunion</option><option value="Romania">Romania</option><option value="Russia">Russia</option><option value="Rwanda">Rwanda</option><option value="Saint Helena">Saint Helena</option><option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option><option value="Saint Lucia">Saint Lucia</option><option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option><option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option><option value="Samoa">Samoa</option><option value="San Marino">San Marino</option><option value="Sao Tome and Principe">Sao Tome and Principe</option><option value="Saudi Arabia">Saudi Arabia</option><option value="Senegal">Senegal</option><option value="Serbia and Montenegro">Serbia and Montenegro</option><option value="Seychelles">Seychelles</option><option value="Sierra Leone">Sierra Leone</option><option value="Singapore">Singapore</option><option value="Slovakia">Slovakia</option><option value="Slovenia">Slovenia</option><option value="Solomon Islands">Solomon Islands</option><option value="Somalia">Somalia</option><option value="South Africa">South Africa</option><option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option><option value="Spain">Spain</option><option value="Spratly Islands">Spratly Islands</option><option value="Sri Lanka">Sri Lanka</option><option value="Sudan">Sudan</option><option value="Suriname">Suriname</option><option value="Svalbard">Svalbard</option><option value="Swaziland">Swaziland</option><option value="Sweden">Sweden</option><option value="Switzerland">Switzerland</option><option value="Syria">Syria</option><option value="Taiwan">Taiwan</option><option value="Tajikistan">Tajikistan</option><option value="Tanzania">Tanzania</option><option value="Thailand">Thailand</option><option value="The Bahamas">The Bahamas</option><option value="Timor-Leste">Timor-Leste</option><option value="Togo">Togo</option><option value="Tokelau">Tokelau</option><option value="Tonga">Tonga</option><option value="Trinidad and Tobago">Trinidad and Tobago</option><option value="Tromelin Island">Tromelin Island</option><option value="Tunisia">Tunisia</option><option value="Turkey">Turkey</option><option value="Turkmenistan">Turkmenistan</option><option value="Turks and Caicos Islands">Turks and Caicos Islands</option><option value="Tuvalu">Tuvalu</option><option value="Uganda">Uganda</option><option value="Ukraine">Ukraine</option><option value="United Arab Emirates">United Arab Emirates</option><option value="United Kingdom">United Kingdom</option><option value="Uruguay">Uruguay</option><option value="Uzbekistan">Uzbekistan</option><option value="Vanuatu">Vanuatu</option><option value="Venezuela">Venezuela</option><option value="Vietnam">Vietnam</option><option value="Virgin Islands">Virgin Islands</option><option value="Wake Island">Wake Island</option><option value="Wallis and Futuna">Wallis and Futuna</option><option value="West Bank">West Bank</option><option value="Western Sahara">Western Sahara</option><option value="Yemen">Yemen</option><option value="Zambia">Zambia</option><option value="Zimbabwe">Zimbabwe</option></select></span>	
+            		</div>
+            		<div class="blue-btn md lwc submit-wrapper"><input type="submit" class="wpcf7-form-control wpcf7-submit" value="Contact Us"><img class="ajax-loader img-rounded img-responsive" src="http://www.gluu.org/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;"></div>
+        		</form>
+    		</div>
+    	</div>
+    </div>
+</section>
+
+<section class="pampas-bg top-bottom-border mercury-bc reasons-wrapper">
+    <div class="container main">
+    	<div class="row">
+    		<div class="col-sm-8">
+        		<h3>
+                Top 7 Reason People Choose Gluu
+        		</h3>
+        		<ul class="reasons-list">
+            		<li>
+            		<i class="general-reasons_bullet"></i>
+            		Total lowest cost of ownership due to free open source license 
+            		</li>
+            		<li>
+            		<i class="general-reasons_bullet"></i>
+            		The only shipping, commercially supported OpenID Connect Provider that passes all conformance tests.
+            		</li>
+            		<li>
+            		<i class="general-reasons_bullet"></i>
+            		The only production ready implementation of Enterprise UMA
+            		</li>
+            		<li>
+            		<i class="general-reasons_bullet"></i>
+            		Out-of-the-box support for FIDO U2F
+            		</li>
+            		<li>
+            		<i class="general-reasons_bullet"></i>
+            		Flexible support for configuring any strong authentication service, such as Yubikey or DuoSecurity, as well as intrustion detection and DDOS protection. 
+            		</li>
+            		<li>
+            		<i class="general-reasons_bullet"></i>
+            		A turn-key managed service offering to help with continued operations of your IAM infrastructure. 
+            		</li>
+            		<li>
+            		<i class="general-reasons_bullet"></i>
+            		Multi-cloud, resilient recipe for clustering of your access management infrastructure.
+            		</li>
+        		</ul>
+    		</div>
+    	</div>
+    </div>
+</section>
+
+<section class="protocols-wrapper">
+    <div class="container main">
+    	<div class="row">
+    		<div class="col-sm-12">
+        		<h3>
+                The Only Comprehensive, Modern, 100% FOSS Access Management Platform
+        		</h3>
+        		<ul class="protocols-list">
+                    <li>
+                        <div>
+                            <img src="images/protocols/openid_connect.png" />
+                        </div>
+                        <strong>OpenID Connect</strong> 
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/protocols/uma.png" />
+                        </div>
+                        <strong>UMA</strong>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/protocols/scim.png" />
+                        </div>
+                        <strong>SCIM</strong>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/protocols/fido.png" />
+                        </div>
+                        <strong>FIDO</strong>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/protocols/ldap.png" />
+                        </div>
+                        <strong>LDAP</strong>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/protocols/saml.png" />
+                        </div>
+                        <strong>SAML</strong>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/protocols/oauth2.png" />
+                        </div>
+                        <strong>OAuth2</strong>
+                    </li>
+        		</ul>
+        		<p>Support for all of these protocols, combined with easy delivery and a user friendly management interface make the Gluu Server the only access management platform you'll need for today and tomorrow.</p>
+        		<div class="btn-wrapper-1">
+                    <a href="#" class="blue-btn md lwc">
+                    Schedule a call today
+                    </a>
+        		</div>
+    		</div>
+    	</div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="fluid-container">
+    
+    <div class="row">
+        <div class="col col-sm-2 social-links-wrapper">
+            <div class="menu-footer_nav-container"><ul class="footer-nav" id="menu-footer_nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5620" id="menu-item-5620"><a href="http://www.gluu.org/company/our-story/" title="About Gluu">Company</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5973" id="menu-item-5973"><a href="http://www.gluu.org/edu/">EDU</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4170" id="menu-item-4170"><a href="http://news.gluu.org" title="Industry News">News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3242" id="menu-item-3242"><a href="http://www.gluu.org/blog/" title="Gluu Blog">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3247" id="menu-item-3247"><a href="https://support.gluu.org/" title="Support Center">Support</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5746" id="menu-item-5746"><a href="http://gluu.org/docs" title="Gluu Server Documentation">Documentation</a></li>
+</ul></div>            <ul class="social-links">
+				<li>
+				    <a class="social-net general-social_twitter_ic" href="https://twitter.com/GluuFederation">
+    				    &nbsp;
+				    </a>
+				</li>
+				<li>
+				    <a class="social-net general-social_utube_ic" href="https://www.youtube.com/user/GluuOrg">
+    				    &nbsp;
+				    </a>
+				</li>
+				<li>
+				    <a class="social-net general-social_in_ic" href="http://www.linkedin.com/company/gluu-inc.">
+    				    &nbsp;
+				    </a>
+				</li>
+				<li>
+				    <a class="social-net general-social_slideshare_ic" href="http://www.slideshare.net/gluu">
+    				    &nbsp;
+				    </a>
+				</li>
+            </ul>
+        </div>
+        <div class="col col-sm-7">
+			<div class="row">
+			    <div role="complementary" class="widget-area">
+		<div class="first front-widgets">
+		<style>
+.rpwe-block ul{list-style:none!important;margin-left:0!important;padding-left:0!important;}.rpwe-block li{border-bottom:1px solid #eee;margin-bottom:10px;padding-bottom:10px;list-style-type: none;}.rpwe-block a{display:inline!important;text-decoration:none;}.rpwe-block h3{background:none!important;clear:none;margin-bottom:0!important;margin-top:0!important;font-weight:400;font-size:12px!important;line-height:1.5em;}.rpwe-thumb{border:1px solid #EEE!important;box-shadow:none!important;margin:2px 10px 2px 0;padding:3px!important;}.rpwe-summary{font-size:12px;}.rpwe-time{color:#bbb;font-size:11px;}.rpwe-alignleft{display:inline;float:left;}.rpwe-alignright{display:inline;float:right;}.rpwe-aligncenter{display:block;margin-left: auto;margin-right: auto;}.rpwe-clearfix:before,.rpwe-clearfix:after{content:"";display:table !important;}.rpwe-clearfix:after{clear:both;}.rpwe-clearfix{zoom:1;}
+</style>
+	<aside class="widget rpwe_widget recent-posts-extended col col-sm-5 col-sm-offset-1" id="rpwe_widget-2"><div class="widget-title">Press Releases</div><div class="rpwe-block "><ul class="rpwe-ul"><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a rel="bookmark" title="Permalink to Gluu Server 2.3 release includes support for FIDO U2F authentication and conformance with all OpenID Connect 1.0 profiles" href="http://www.gluu.org/press-releases/2015/gluu-server-2-3-release-includes-support-for-fido-u2f-authentication-and-conformance-with-all-openid-connect-1-0-profiles/">Gluu Server 2.3 release includes support for FIDO U2F authentication and conformance with all OpenID Connect 1.0 profiles</a></h3><time datetime="2015-06-24T13:15:28+00:00" class="rpwe-time published">June 24, 2015</time></li><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a rel="bookmark" title="Permalink to Gluu to Promote OAuth2 Access Management at Cloud Identity Summit" href="http://www.gluu.org/press-releases/2015/gluu-to-promote-oauth2-access-management-at-cloud-identity-summit/">Gluu to Promote OAuth2 Access Management at Cloud Identity Summit</a></h3><time datetime="2015-06-08T12:45:24+00:00" class="rpwe-time published">June 8, 2015</time></li></ul></div><!-- Generated by http://wordpress.org/plugins/recent-posts-widget-extended/ --><a href="http://www.gluu.org/resources/press-releases/" class="view-all-link">View All</a><a href="http://www.gluu.org/resources/press-releases/" class="view-all-link">View All</a></aside><aside class="widget widget_reallysimpletwitterwidget col col-sm-5 col-sm-offset-1" id="reallysimpletwitterwidget-2"><div class="widget-title">Last Tweets</div>
+      <ul class="really_simple_twitter_widget"><li>The Gluu Daily is out! <a class="twitter-link" href="http://t.co/oHzhOENqRS">http://t.co/oHzhOENqRS</a> Stories via @psael @Boeing</li><li>LONESTAR APPLICATION SECURITY CONFERENCE <a class="twitter-link" href="http://t.co/a0cI4S2ADl">http://t.co/a0cI4S2ADl</a> Austin TX OCt 20-23 NORRIS CONFERENCE CENTER @LASCONATX</li></ul><a href="https://twitter.com/GluuFederation" class="twitter-follow-link">Follow Us</a><a href="https://twitter.com/GluuFederation" class="twitter-follow-link">Follow Us</a></aside>	</div><!-- .first -->
+	</div><!-- #secondary -->			</div>
+        </div>
+        <div class="col col-sm-3 question-container">
+			<h4>Questions?</h4>
+			<strong>(512) 516-2413</strong>
+			<div class="gray-btn-wrapper-1">
+			    <a href="http://gluu.org/deploy" class="blue-btn md">
+			    <span>Deploy the Gluu Server</span>
+			    </a>
+			</div>
+		</div>
+    </div>
+    
+    <div class="row">
+        <div class="col col-sm-12">
+            <hr class="bottom-footer-line">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col col-sm-12">
+            <ul class="copyright-list">
+                <li>@ 2009-2015 Gluu, Inc.</li>
+                <li><a href="http://www.gluu.org/terms">Terms</a></li>
+                <li><a href="http://www.gluu.org/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    </div>
+</footer>
+
+</div><!-- .main-wrapper-->    
+    
+<!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+<script type="text/javascript" src="js/jquery.webui-popover.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/ie-row-fix.js"></script>
+<script src="js/typed.js"></script>
+<script type="text/javascript" src="js/wpcustom.js"></script>    
+<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>   
+<script type="text/javascript" src="js/jquery.color.js"></script>
+
+</body>
+
+</html>

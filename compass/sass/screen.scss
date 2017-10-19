@@ -1,0 +1,55 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+
+$enterprise-layout:diagonal;
+$front17-layout:diagonal;
+$general-layout:diagonal;
+$pricingtv1-layout:diagonal;
+$pricingtv2-layout:diagonal;
+
+@import "enterprise/*.png";
+@import "front17/*.png";
+@import "general/*.png";
+@import "pricingtv1/*.png";
+@import "pricingtv2/*.png";
+
+//enterprise
+@include all-enterprise-sprites;
+//end enterprise
+
+//front17
+@include all-front17-sprites;
+
+.page-template-front17-page .bx-wrapper .bx-prev {
+	@extend .front17-arr_left;
+}
+
+.page-template-front17-page .bx-wrapper .bx-next {
+	@extend .front17-arr_right;
+}
+.single .bx-wrapper .bx-prev{
+    @extend .general-arr_left;
+}
+.single .bx-wrapper .bx-next{
+    @extend .general-arr_right;
+}
+//end front17
+
+//general
+@include all-general-sprites;
+
+.search-bar{
+    @include background-image(linear-gradient(white, #dbdbdb 93%, #c4c4c4));
+    max-width:1250px;
+    margin:0 auto;
+}
+//end general
+
+//pricing
+@include all-pricingtv1-sprites;
+@include all-pricingtv2-sprites;
+//end pricing

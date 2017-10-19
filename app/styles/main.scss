@@ -1,0 +1,89 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_scaffolding.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_forms.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_component-animations.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_dropdowns.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navs.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_tooltip.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_popovers.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_utilities.scss";
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_responsive-utilities.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+/*Utilities*/
+@import "utilities/settings";
+@import "utilities/mixins";
+@import "utilities/utilities";
+
+/*Base*/
+@import "base/httpstypography";
+//@import "base/typography";
+@import "base/base";
+@import "base/sprites2";//is use, "background" for photos on /leadership, "quote mark" on /edu, greeen bullet on ?, "arrow icons" for buttons, "zoom icon" for lightbox, consider to moving them to another sprite
+@import "base/sprites";
+
+/*Theme*/
+@import "theme/theme";
+
+/*Layout*/
+@import "layout/nav";
+@import "layout/variables";
+@import "layout/navmenu";
+@import "layout/offcanvas";
+@import "layout/header";
+@import "layout/main";
+@import "layout/overrides";
+@import "layout/footer";
+
+/*Pages*/
+//@import "pages/front";
+@import "pages/new_front"; /*/gluu-server*/
+@import "pages/front17"; /*home*/
+@import "pages/vip_support";/*template seems to be unused, but some css might be used, check /gluu-server/pricing page - done*/
+@import "pages/company";
+@import "pages/documents";
+//@import "pages/pricing"; /*not sure what page it belongs*/
+@import "pages/server_deployments";/*/deploy*/
+@import "pages/upcoming_events";
+@import "pages/videos";
+//@import "pages/ent_pricing"; /*not sure what page it belongs*/
+@import "pages/entitlements"; /*in use, on /entitlements*/
+//@import "pages/main_pricing"; /*not sure what page it belongs*/
+//@import "pages/pricing_table_v1"; /*not sure what page it belongs*/
+//@import "pages/pricing_table_v2";
+@import "pages/roadmap";
+@import "pages/rsa";
+//@import "pages/cevsde";
+@import "pages/edu";
+@import "pages/thank-you";
+@import "pages/p404";
+@import "pages/webinar";
+//@import "pages/contact_us";/*seems not have effect*/
+@import "pages/single_sign_on";
+@import "pages/two_factor";
+
+/*Modules*/
+@import "modules/bxslider";
+//@import "modules/flexslider";
+//@import "modules/jcarousel";
+@import "modules/bootstrap-select";
+@import "modules/btn";
+@import "modules/dividers";
+@import "modules/forms";
+@import "modules/search";
+@import "modules/misc";
+@import "modules/animate";
+@import "modules/hover/hover";
+@import "modules/tables/pricing_table_v2"; /*present pricing*/
+@import "modules/elements";

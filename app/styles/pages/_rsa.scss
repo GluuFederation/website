@@ -1,0 +1,59 @@
+/*
+    RSA
+*/
+
+.form-wrapper{
+    padding-top:52px;
+    form{
+        > div{
+            margin-bottom:26px;
+        }
+    }
+}
+.reasons-wrapper{
+    padding-bottom:56px;
+}
+.reasons-list{
+    margin:0;
+    padding:0;
+    li{
+        position:relative;
+        padding-left:26px;
+        margin-bottom:16px;
+    }
+}
+.protocols-wrapper{
+    padding-bottom:64px;
+}
+.protocols-list{
+    margin:23px 0 18px 0;
+    padding:0;
+    overflow:hidden;
+    li{
+        display:inline-block;
+        text-align:center;
+        width:120px;
+        float:left;
+        &:last-child{
+            margin-right:0;
+        }
+        margin-right:17px;
+        margin-bottom:15px;
+        > div{
+            border:1px solid #c7c7c7;
+            padding:7px 0 3px 0;
+            line-height:93px;
+            img{
+                vertical-align:middle;
+            }
+        }
+        strong{
+            font-size:14px;
+            line-height:1em;
+            font-weight:500;
+            color:#414141;
+            margin:12px 0 0 0;
+            display:inline-block;
+        }
+    }
+}

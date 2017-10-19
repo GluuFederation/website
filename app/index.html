@@ -1,0 +1,784 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GLUU</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/animate.min.css">
+<!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <!-- endbuild -->
+
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="js/respond.min.js"></script>
+</head>
+
+<body class="home page-template page-template-page-templates page-template-front17-page page-template-page-templatesfront17-page-php page page-id-10436 full-width">
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+<div class="main-wrapper">    
+
+<div class="header-banner-wrapper">
+    <div class="fixedtop-wrapper">
+        <!--<div id="fixedtop">
+            <div class="container">
+                <div class="row">
+        		    <div class="col-sm-12 search-row">
+        		        <div class="search-form-wrapper">
+        		            <form method="get" id="searchform" class="main-searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    		<input type="text" class="field" dir="auto" name="s" id="s" placeholder="Enter Search" />
+                    		<button class="submit btn btn-search glyphicon glyphicon-search" id="searchsubmit"></button>
+                            </form>
+        		        </div>
+                    </div>
+                </div>
+            </div>
+        </div>--><!--end #fixedtop-->
+
+<header class="top-bar nav-panel">
+    <div class="top-bar-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="top-nav-wrapper" style="">
+                        <ul id="menu-top_nav" class="top-nav list-unstyled"><li id="menu-item-5625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5625"><a href="http://test1.rsn.org.ua/company/contact-us/">Contact</a>
+<ul class="sub-menu">
+	<li id="menu-item-10737" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-10737"><a href="#">test</a></li>
+	<li id="menu-item-10737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10737"><a href="#">test</a></li>
+</ul>
+</li>
+<li id="menu-item-5415" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5415"><a href="https://support.gluu.org/">Support</a>
+<ul class="sub-menu">
+	<li id="menu-item-10737" class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-10737"><a href="#">test</a></li>
+	<li id="menu-item-10737" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10737"><a href="#">test</a></li>
+</ul>
+</li>
+<li id="menu-item-10430" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10430"><a href="http://test1.rsn.org.ua/ce-roadmap/">Roadmap</a></li>
+</ul>
+                    </nav>        
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--<div class="top-bar-inner">    
+<div class="hidden-xs fluid-container">
+		
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="front-logo">
+                <a href="#">
+                    <img src="images/gl.png" class="img-responsive green-logo" />
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-10">
+            
+            <div class="row">
+            <div class="col-sm-12">
+                <nav class="front-nav-wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">Open source</a>
+                        </li>
+                        <li>
+                            <a href="#">Gluu server</a>
+                        </li>
+                        <li>
+                            <a href="#">Clusters</a>
+                        </li>
+                        <li>
+                            <a href="#">EDU</a>
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="schedule-btn">
+                            <a href="#">
+                                Deploy The Gluu Server
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div>     
+    </div>
+    
+</div>
+</div>--><!-- .top-bar-inner-->
+
+    
+<!--<div class="visible-xs container">    
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-default nav-panel" role="navigation">
+                    
+                    <div class="navbar-header">
+        				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse">
+        					<span class="sr-only">Toggle navigation</span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        					<span class="icon-bar"></span>
+        				</button>
+        		
+                        <a class="navbar-brand" id="brand-name" href="#">
+                            <img src="images/logo.png" alt="gluu logo" />
+                        </a>
+                    </div>
+                    
+            		<div class="collapse navbar-collapse" id="navbar-ex1-collapse">
+            			<ul class="nav navbar-nav">
+                                <li>
+                                    <a href="#">Open source</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gluu server</a>
+                                </li>
+                                <li>
+                                    <a href="#">Clusters</a>
+                                </li>
+                                <li>
+                                    <a href="#">EDU</a>
+                                </li>
+                                <li>
+                                    <a href="#">Resources</a>
+                                </li>
+                                <li>
+                                    <a href="#">Schedule a demo</a>
+                                </li>
+                            </ul>
+            		</div>			
+            </nav>
+        </div>
+    </div>
+   		
+</div>--><!-- .container-->
+<!--<div class="top-bar-shadow"></div>--> 
+</header>
+</div><!-- end .fixedtop-wrapper-->
+
+<!--<div class="home-banner-wrapper">
+    <div class="home-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 banner-col">
+                    <div class="banner-inner">
+                        <div class="banner-content">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div class="container-fluid">
+    <div class="row logo-buttons">
+        <div class="col-md-4 text-center-lmd">
+            <img src="images/gluu_logo_white.png" />
+        </div>
+        <div class="col-md-8">
+            <ul class="hero-btns hidden-xs hidden-sm">
+               <li>
+                    <a href="#" class="pickled-bluewood-btn">Vip support</a>
+               </li>
+               <li>
+                    <a href="#" class="green-haze-btn">Schedule a meeting</a>
+               </li> 
+            </ul>
+        </div>
+    </div>
+    <div class="row hero-content">
+        <div class="col-sm-12">
+            <h1 class="brsm">Enterprise Grade Identity and Access<br /> Management Software</h1>
+            <p class="brlg">Organizations rely on Gluu's products to reduce password proliferation and<br /> deliver a better, more secure user experience across all their applications.</p>
+        </div>
+    </div>
+    <div class="row logo-buttons visible-xs visible-sm">
+        <div class="col-sm-12">
+            <ul class="hero-btns">
+               <li>
+                    <a href="#" class="green-haze-btn">Schedule a meeting</a>
+               </li>
+               <li>
+                    <a href="#" class="pickled-bluewood-btn">Vip support</a>
+               </li> 
+            </ul>
+        </div>
+    </div>
+    <div class="row text-center hero-products hidden-xs hidden-sm">
+        <div class="col-sm-4 hvr-border-fade">
+            <i class="front17-gluu_server"></i>
+            <strong>Gluu Server</strong>
+            <p>Open Source SAML & OpenID<br /> Connect Identity Provider (IDP)</p>
+            <a href="#" class="btn17">Learn more</a>
+        </div>
+        <div class="col-sm-4 hvr-border-fade">
+            <i class="front17-openid"></i>
+            <strong>oxd</strong>
+            <p>OpenID Connect client<br /> software for web applications.</p>
+            <a href="#" class="btn17">Learn more</a>
+        </div>
+        <div class="col-sm-4 hvr-border-fade">
+            <i class="front17-super_gluu_white"></i>
+            <strong>Super Gluu</strong>
+            <p>Free Android & iOS two-factor<br /> authentication app</p>
+            <a href="#" class="btn17">Learn more</a>
+        </div>
+    </div>
+</div>
+
+<div class="hero-subscribe-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"><div class="mw843 center-block">
+                <h3>Get News and Product Updates:</h3>
+                <script type="text/javascript">(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.0.13 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-6140 mc4wp-ajax" method="post" data-id="6140" data-name="Sign-Up form"><div class="mc4wp-form-fields"><div class="control">
+	<input id="mc4wp_email" class="form-control" name="EMAIL" placeholder="Enter your Email Address" required="" type="email">
+</div>
+	<input class="btn btn-success btn-block" value="Subscribe" type="submit">
+<div style="display: none;"><input name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" type="text"></div><input name="_mc4wp_timestamp" value="1494962232" type="hidden"><input name="_mc4wp_form_id" value="6140" type="hidden"><input name="_mc4wp_form_element_id" value="mc4wp-form-1" type="hidden"></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->            </div></div>
+        </div>
+    </div>
+</div>
+
+</div><!-- end header-banner-wrapper-->
+
+<section class="gluu-server">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">
+                Central Identity and Access Management Platform  
+                </h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 brlg">
+                        <h3>
+                            <i class="front17-gluu_icon1"></i>
+                            <span>Gluu Server</span>    
+                        </h3>
+                        <p>
+                        Centralized authentication and<br /> authorization for all your applications.
+                        </p>
+                        <hr />
+                        <p>
+                        Point all your applications at Gluu to leverage a<br /> single identity and authentication infrastructure.     
+                        </p>
+                        <ul class="section-btns hidden-xs">
+                            <li>
+                                <a href="#" class="solid cerulean-btn btn17">Install Gluu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-7 col-md-offset-1">
+                        <img src="images/minimalistic-browser-mockup2.png" class="img-responsive" />
+                    </div>
+                    <div class="visible-xs">
+                        <ul class="section-btns">
+                            <li>
+                                <a href="#" class="solid cerulean-btn btn17">Install Gluu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="go-next-wrap">
+                    <a href="#oxd" data-scroll-nav="0"><i class="front17-arrows1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oxd" id="oxd" data-scroll-index="0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">
+                Client Software to Secure Applications 
+                </h2>
+                <div class="row">
+                    
+                    <div class="col-sm-6 col-md-4 col-md-offset-1 brlg pull-right-sm">
+                        <h3>
+                                    <i class="front17-openid_green3"></i>
+                                    <span>oxd</span>    
+                                </h3>
+                                <p>
+                                Secure OAuth 2.0 and OpenID<br /> Connect client software
+                                </p>
+                                <hr />
+                                <p>
+                                Add OAuth 2.0 and OpenID Connect to<br /> any web application.     
+                                </p>
+                                <ul class="section-btns hidden-xs">
+                                    <li>
+                                        <a href="#" class="solid cerulean-btn btn17">Learn more</a>
+                                    </li>
+                                </ul>
+                    </div>
+                    <div class="col-sm-7 pull-left-sm">
+                        <img src="images/oxd-scheme4.png" class="img-responsive" />
+                    </div>
+                    <div class="visible-xs">
+                        <ul class="section-btns">
+                            <li>
+                                <a href="#" class="solid cerulean-btn btn17">Learn more</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row intro-3rd-party mb66">
+                    <div class="col-sm-12 text-center">
+                        <p>In addition to oxd, the following 3rd party client software projects can be used to<br /> secure the sign-in flow for web and mobile applications against the Gluu Server.</p>
+                    </div>
+                </div>
+                
+                        <ul class="slider2">
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-apache"></i>
+                                    </div>
+                                    <h3>
+                                        <span>mod_auth_openidc</span>
+                                    </h3>
+                                    <p>
+                                    Authentication/authorization module for the Apache 2.x HTTP server that authenticates users against an OpenID Connect Provider..
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-nginx"></i>
+                                    </div>
+                                    <h3>
+                                        <span>Lua Resty OpenIDC</span>
+                                    </h3>
+                                    <p>
+                                    Library for NGINX implementing the OpenID Connect Relying Party (RP) and the OAuth 2.0 Resource Server (RS) functionality.
+
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-dev_oauth_badge"></i>
+                                    </div>
+                                    <h3>
+                                        <span>AppAuth</span>
+                                    </h3>
+                                    <p>
+                                    Android, iOS and macOS client SDK’s for communicating with OAuth 2.0 and OpenID Connect providers.    
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-js"></i>
+                                    </div>
+                                    <h3>
+                                        <span>Javascript Implicit<br /> Flow Client</span>
+                                    </h3>
+                                    <p>
+                                    Library to provide OpenID Connect (OIDC) and OAuth2 protocol support for client-side, browser-based JavaScript client applications.    
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    
+                <div class="go-next-wrap">
+                    <a href="#super-gluu" data-scroll-nav="1"><i class="front17-arrows1"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="super-gluu" id="super-gluu" data-scroll-index="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">
+                Free and Commercial Strong Authentication 
+                </h2>
+                <div class="row">
+                    <div class="col-sm-5 brxlg">
+                        <h3>
+                            <i class="front17-super_gluu_mobile"></i>
+                            <span>Super Gluu</span>    
+                        </h3>
+                        <p>
+                        Free and secure two-factor authentication mobile<br /> application.
+                        </p>
+                        <hr />
+                        <p>
+                        Enhance security with two-factor authentication to any<br /> applications that relies on Gluu for login.     
+                        </p>
+                        <ul class="section-btns hidden-xs">
+                            <li>
+                                <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-7">
+                        <img src="images/phones.png" class="img-responsive center-block" />
+                    </div>
+                    <div class="visible-xs">
+                        <ul class="section-btns">
+                            <li>
+                                <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row intro-3rd-party mb50">
+                    <div class="col-sm-12 text-center">
+                        <p>In addition to Super Gluu, the following 3rd party authentication mechanisms can be<br /> used to fortify access to web and mobile applications that use the Gluu Server for login.</p>
+                    </div>
+                </div>
+                
+                        <ul class="slider5">
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-yubikey"></i>
+                                    </div>
+                                    <h3>
+                                        <span>Yubikey</span>
+                                    </h3>
+                                    <p>
+                                    A hardware authentication device that supports one-time passwords, public key encryption and authentication, and the Universal 2nd Factor (U2F) protocol developed by FIDO.
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-duo"></i>
+                                    </div>
+                                    <h3>
+                                        <span>DUO Security</span>
+                                    </h3>
+                                    <p>
+                                    Duo Security provides two-factor authentication as a service to protect against account takeover and data theft.
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-mfa"></i>
+                                    </div>
+                                    <h3>
+                                        <span>Google Authenticator</span>
+                                    </h3>
+                                    <p>
+                                    A free service that implements two-step authentication using Time-based One-time Passwords (TOTP).    
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <div class="icon-wrapper">
+                                        <i class="front17-hyperfido"></i>
+                                    </div>
+                                    <h3>
+                                        <span>Hyper FIDO</span>
+                                    </h3>
+                                    <p>
+                                    The HyperFido hardware key supports the FIDO U2F protocol and enables seamless authentication to websites and browser based applications.    
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slider">
+                                <div class="inner-wrapper">
+                                    <i class="front17-nginx"></i>
+                                    <h3>
+                                        <span>Lua Resty OpenIDC</span>
+                                    </h3>
+                                    <p>
+                                    Library for NGINX implementing the OpenID Connect Relying Party (RP) and the OAuth 2.0 Resource Server (RS) functionality.
+
+                                    </p>
+                                    <div class="section-btns">
+                                        <a href="#" class="see-through cerulean-btn btn17">Learn more</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                <div class="row intro-3rd-party mt44 mb66 brlg">
+                    <div class="col-sm-12 text-center">
+                        <p>
+                        Don’t see your preferred authentication mechanism here? No problem! Gluu can be configured to use any<br /> authentication mechanism that exposes a web API or supports the FIDO authentication standard.  
+                        </p>
+                    </div>
+                </div>    
+                <div class="row mb68">
+                    <div class="col-sm-12 text-center text-uppercase fs12">
+                        <a class="view-all-mechanism" href="#">View all supported mechanism</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="discuss-needs text-center">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-center">
+                Let's discuss your needs
+                </h2>
+                <p>Speak to us today to learn more about how the Gluu Server can help<br /> protect your organization.</p>
+                <a href="#" class="green-haze-btn">Schedule a call</a>
+                <div class="calling-wrapper">
+                    <i class="front17-calling"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col-sm-2 social-links-wrapper">
+            <div class="menu-footer_nav-container"><ul class="footer-nav" id="menu-footer_nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5620" id="menu-item-5620"><a href="http://www.gluu.org/company/our-story/" title="About Gluu">Company</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5973" id="menu-item-5973"><a href="http://www.gluu.org/edu/">EDU</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4170" id="menu-item-4170"><a href="http://news.gluu.org" title="Industry News">News</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3242" id="menu-item-3242"><a href="http://www.gluu.org/blog/" title="Gluu Blog">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3247" id="menu-item-3247"><a href="https://support.gluu.org/" title="Support Center">Support</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5746" id="menu-item-5746"><a href="http://gluu.org/docs" title="Gluu Server Documentation">Documentation</a></li>
+</ul></div>            <ul class="social-links">
+				<li>
+				    <a href="https://twitter.com/GluuFederation">
+    				    <i class="fa fa-twitter" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<!--<li>
+				    <a href="">
+    				    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+				    </a>
+				</li>-->
+				<li>
+				    <a href="https://www.youtube.com/user/GluuOrg">
+    				    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="http://www.linkedin.com/company/gluu-inc.">
+    				    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="http://www.slideshare.net/gluu">
+    				    <i class="fa fa-slideshare" aria-hidden="true"></i>
+				    </a>
+				</li>
+            </ul>
+        </div>
+        <div class="col-sm-7">
+			<div class="row">
+			    <div role="complementary" class="widget-area">
+		<div class="first front-widgets">
+		<style>
+.rpwe-block ul{list-style:none!important;margin-left:0!important;padding-left:0!important;}.rpwe-block li{border-bottom:1px solid #eee;margin-bottom:10px;padding-bottom:10px;list-style-type: none;}.rpwe-block a{display:inline!important;text-decoration:none;}.rpwe-block h3{background:none!important;clear:none;margin-bottom:0!important;margin-top:0!important;font-weight:400;font-size:12px!important;line-height:1.5em;}.rpwe-thumb{border:1px solid #EEE!important;box-shadow:none!important;margin:2px 10px 2px 0;padding:3px!important;}.rpwe-summary{font-size:12px;}.rpwe-time{color:#bbb;font-size:11px;}.rpwe-alignleft{display:inline;float:left;}.rpwe-alignright{display:inline;float:right;}.rpwe-aligncenter{display:block;margin-left: auto;margin-right: auto;}.rpwe-clearfix:before,.rpwe-clearfix:after{content:"";display:table !important;}.rpwe-clearfix:after{clear:both;}.rpwe-clearfix{zoom:1;}
+</style>
+	<aside class="widget rpwe_widget recent-posts-extended col-sm-5 col-sm-offset-1" id="rpwe_widget-2">
+    	<div class="widget-title">Press Releases</div>
+    	<div class="rpwe-block ">
+    	<ul class="rpwe-ul"><li class="rpwe-li rpwe-clearfix">
+        	<h3 class="rpwe-title"><a rel="bookmark" title="Permalink to Gluu Server 2.3 release includes support for FIDO U2F authentication and conformance with all OpenID Connect 1.0 profiles" href="http://www.gluu.org/press-releases/2015/gluu-server-2-3-release-includes-support-for-fido-u2f-authentication-and-conformance-with-all-openid-connect-1-0-profiles/">Gluu Server 2.3 release includes support for FIDO U2F authentication and conformance with all OpenID Connect 1.0 profiles</a></h3>
+        	<time datetime="2015-06-24T13:15:28+00:00" class="rpwe-time published">June 24, 2015</time></li><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a rel="bookmark" title="Permalink to Gluu to Promote OAuth2 Access Management at Cloud Identity Summit" href="http://www.gluu.org/press-releases/2015/gluu-to-promote-oauth2-access-management-at-cloud-identity-summit/">Gluu to Promote OAuth2 Access Management at Cloud Identity Summit</a></h3><time datetime="2015-06-08T12:45:24+00:00" class="rpwe-time published">June 8, 2015</time></li></ul>
+    	</div><!-- Generated by http://wordpress.org/plugins/recent-posts-widget-extended/ --><a href="http://www.gluu.org/resources/press-releases/" class="view-all-link">View All</a><a href="http://www.gluu.org/resources/press-releases/" class="view-all-link">View All</a></aside><aside class="widget widget_reallysimpletwitterwidget col-sm-5 col-sm-offset-1" id="reallysimpletwitterwidget-2">
+    <div class="widget-title">Last Tweets</div>
+      <ul class="really_simple_twitter_widget">
+          <li>The Gluu Daily is out! <a class="twitter-link" href="http://t.co/oHzhOENqRS">http://t.co/oHzhOENqRS</a> Stories via @psael @Boeing</li>
+          <li>LONESTAR APPLICATION SECURITY CONFERENCE <a class="twitter-link" href="http://t.co/a0cI4S2ADl">http://t.co/a0cI4S2ADl</a> Austin TX OCt 20-23 NORRIS CONFERENCE CENTER @LASCONATX</li>
+          </ul>
+          <a href="https://twitter.com/GluuFederation" class="twitter-follow-link">Follow Us</a><a href="https://twitter.com/GluuFederation" class="twitter-follow-link">Follow Us</a></aside>	</div><!-- .first -->
+	</div><!-- #secondary -->			</div>
+        </div>
+        <div class="col-sm-3 question-container">
+            <div class="inner-wrapper">
+			<h4>Questions?</h4>
+			<ul class="footer-btns">
+               <li>
+                   <a href="http://gluu.org/deploy" class="solid greenHaze-btn">
+    			    Schedule a meeting
+                    </a>
+               </li>
+               <li>
+    			    <a href="http://gluu.org/deploy" class="solid cerulean2-btn">
+    			    Visit Gluu support
+    			    </a>
+               </li>
+			</ul>
+			<div class="subscribe-wrap">
+                    <script type="text/javascript">(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.0.13 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-6140 mc4wp-ajax" method="post" data-id="6140" data-name="Sign-Up form"><div class="mc4wp-form-fields"><h3>Join Our Newsletter</h3>
+<div class="control">
+	<input id="mc4wp_email" class="form-control" name="EMAIL" placeholder="Enter your Email Address" required="" type="email">
+</div>
+	<input class="btn btn-success btn-block" value="Subscribe" type="submit">
+<div style="display: none;"><input name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" type="text"></div><input name="_mc4wp_timestamp" value="1494958412" type="hidden"><input name="_mc4wp_form_id" value="6140" type="hidden"><input name="_mc4wp_form_element_id" value="mc4wp-form-1" type="hidden"></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->                </div>
+            </div>
+		</div>
+    </div>
+    </div>
+    
+    <hr class="bottom-footer-line">
+    
+    <div class="container-fluid">    
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="copyright-list">
+                    <li>@ 2009-2015 Gluu, Inc.</li>
+                    <li><a href="http://www.gluu.org/terms">Terms</a></li>
+                    <li><a href="http://www.gluu.org/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+</footer>    
+
+</div><!-- .main-wrapper-->
+
+<!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+<script type="text/javascript" src="js/jquery.webui-popover.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/ie-row-fix.js"></script>
+<script src="js/typed.js"></script>
+<!--<script type="text/javascript" src="js/wpcustom.js"></script>-->    
+<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+<script src="js/scrollIt.min.js" type="text/javascript"></script>   
+<script type="text/javascript" src="js/jquery.color.js"></script>
+<!--<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>-->
+
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<!--<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>        
+<script type="text/javascript" src="js/jquery.jcarousel-swipe.js"></script>
+<script type="text/javascript" src="js/jcarousel.responsive.js"></script>-->
+        
+<!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>

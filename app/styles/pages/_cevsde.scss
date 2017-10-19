@@ -1,0 +1,189 @@
+/*
+    Ce vs De
+*/
+.cevsde-nav{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    li{
+        display:inline-block;
+    }
+    a{
+        font-size:13px;
+        display:inline-block;
+        line-height:1em;
+        padding:10px 23px 14px 23px;
+        &:link, &:hover, &:active, &:visited{
+            color:#fff;
+        }
+    }
+    a.active{
+        background-color:$cerulean;
+    }
+}
+.community-edition{
+    .container{
+        background-image:url(../images/community_edition_graph.png);
+        background-repeat:no-repeat;
+        background-position:right 25px;
+        min-height:534px;
+    }
+    .deploy-gluu-btn{
+        padding-top:11px;
+        padding-bottom:13px;
+    }
+}
+.docker-edition, 
+.community-edition{
+    .container{
+        padding-top:83px;
+        padding-bottom:83px;
+    }
+    h2{
+        font-size:42.5px;
+        text-transform: uppercase;
+        margin:22px 0 0 0;
+        line-height:1em;
+    }
+}
+.reporting-publishing{
+    .container{
+        padding-top:37px;
+        padding-bottom:69px;
+    }
+}
+.community-edition{
+    color:#fff;
+}
+.gs{
+    font-size:44.7px;
+    font-weight:300;
+    line-height:1em;
+    text-transform: uppercase;
+}
+.docker-edition,
+.community-edition{
+    ul{
+        list-style-type:disc;
+        margin:21px 0 0 34px;
+        padding:0 10px 0 0;
+        @media (min-width: $screen-md) {
+            padding:0; 
+        }
+        li{
+            &:first-child{
+                margin-top:0;
+            }
+            margin-top:15px;
+        }
+    }
+}
+.btns-wrapper{
+    margin-top:37px;
+    @media (min-width: $screen-xs) {
+        overflow:hidden;
+        div{
+            display:inline-block;
+            float:left;
+            &:first-child{
+                margin-right:21px;
+            }
+        }
+    }
+}
+.reporting-publishing{
+    .btns-wrapper{
+        margin-top:61px;
+        margin-bottom:40px;
+    }
+}
+.compare-gitlab-editions{
+    background-color:$jade;
+    padding:70px 0 70px 0;
+    text-align:center;
+    p{
+        font-size:35.6px;
+        font-weight:300;
+        line-height:1em;
+        text-transform:uppercase;
+        margin:0;
+        color:#fff;
+    }
+}
+.reporting-publishing-table{
+    border:1px solid #dddddd;
+    overflow:hidden;
+    .header{
+        .inner-wrapper{
+            background:#dff0d8;
+            color:#3c763d;
+            font-size:18px;
+            padding:7px 0 7px 49px;
+        }
+    }
+    .label-row{
+        font-weight:400;
+        font-size:13px;
+    }
+    .row:not(.header){
+        border-top:1px solid #dddddd;
+        .col-sm-4{
+            border-left:1px solid #dddddd;
+            margin-bottom:-9999px;
+            padding-bottom:9999px;
+        }
+    }
+    .row{
+        .inner-wrapper{
+            padding:10px 0 9px 49px;
+        }
+        
+    }
+    .row:not(.label-row){
+        font-size:15px;
+        .col-sm-4{
+            color:#777777;
+            &:first-child{
+                color:#4265ad;
+            }
+        }
+        
+    }
+    .content-row{
+        .col-sm-4{
+            &:first-child{
+                @media (max-width: $screen-sm) {
+                    text-align:center;
+                    .inner-wrapper{
+                        padding-left:0;
+                    }
+                }
+            }
+        }
+        .col-sm-4:not(:first-child){
+        @media (max-width: $screen-sm) {
+            .inner-wrapper{
+                position:relative;
+                div{
+                    padding-left:115px;
+                }
+            }
+            .inner-wrapper:before {
+                content:attr(data-feature) ':';
+                position:absolute;
+                left:15px;
+                font-size:15px;
+                font-weight:600;
+                
+            }
+        }
+        }
+    }
+    
+}
+.cevsde-fixed-wrapper{
+    width:100%;
+    z-index:20;
+    top:0;
+}

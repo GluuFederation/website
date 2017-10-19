@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GLUU</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+<!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <!-- endbuild -->
+
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="js/respond.min.js"></script>
+</head>
+
+<body class="post-template-default single single-post postid-12832 single-format-standard custom-background header-full-width nolayout">
+    
+    <nav id="myNavmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas" role="navigation">
+        <div class="menu-mobile-nav-container">
+                <div class="menu-top_nav_mobile-container"><ul id="menu-top_nav_mobile" class="nav navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12342" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-10436 current_page_item menu-item-12342 active"><a title="Home" href="https://www.gluu.org/" itemprop="url">Home</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12343" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12343 dropdown"><a class="dropdown-toggle" title="Products" href="#" data-toggle="dropdown" aria-haspopup="true" itemprop="url">Products</a>
+<ul role="menu" class=" dropdown-menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12344" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12344 dropdown dropdown-submenu"><a class="dropdown-toggle" title="Gluu Server" href="#" data-toggle="dropdown" aria-haspopup="true" itemprop="url">Gluu Server</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12345" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12345"><a title="Home" href="https://www.gluu.org/gluu-server/" itemprop="url">Home</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12346" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12346"><a title="Overview" href="https://www.gluu.org/gluu-server/overview/" itemprop="url">Overview</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12347"><a title="Gluu Server CE Roadmap" href="https://www.gluu.org/ce-roadmap/" itemprop="url">Gluu Server CE Roadmap</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12353" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12353"><a title="Deploy Gluu" href="https://gluu.org/deploy" itemprop="url">Deploy Gluu</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12349"><a title="Pricing" href="https://www.gluu.org/cloud-identity/on-demand/pricing/" itemprop="url">Pricing</a></li>
+	</ul>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12350" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12350 dropdown dropdown-submenu"><a class="dropdown-toggle" title="OXD" href="#" data-toggle="dropdown" aria-haspopup="true" itemprop="url">OXD</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12351" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12351"><a title="Pricing" href="https://oxd.gluu.org/#pricing" itemprop="url">Pricing</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12352" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12352"><a title="Docs" href="https://gluu.org/docs/oxd" itemprop="url">Docs</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12382" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12382"><a title="My Account" href="https://oxd.gluu.org/login/gluu/?next=/account/register-auth/" itemprop="url">My Account</a></li>
+	</ul>
+</li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12354" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12354 dropdown dropdown-submenu"><a class="dropdown-toggle" title="Super Gluu" href="#" data-toggle="dropdown" aria-haspopup="true" itemprop="url">Super Gluu</a>
+	<ul role="menu" class=" dropdown-menu">
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12355" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12355"><a title="How it Works" href="https://super.gluu.org/#how-it-works" itemprop="url">How it Works</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12356" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12356"><a title="Features" href="https://super.gluu.org/#features" itemprop="url">Features</a></li>
+		<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12357" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12357"><a title="Docs" href="https://gluu.org/docs/supergluu" itemprop="url">Docs</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12363" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12363 dropdown"><a class="dropdown-toggle" title="Resources" href="#" data-toggle="dropdown" aria-haspopup="true" itemprop="url">Resources</a>
+<ul role="menu" class=" dropdown-menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12364" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12364"><a title="Documents" href="https://www.gluu.org/resources/documents/" itemprop="url">Documents</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12365"><a title="Press Releases" href="https://www.gluu.org/resources/press-releases/" itemprop="url">Press Releases</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12366" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12366"><a title="Upcoming Events" href="https://www.gluu.org/resources/upcoming-events/" itemprop="url">Upcoming Events</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12367"><a title="Videos" href="https://www.gluu.org/resources/videos/" itemprop="url">Videos</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12368 dropdown"><a class="dropdown-toggle" title="Partners" href="#" data-toggle="dropdown" aria-haspopup="true" itemprop="url">Partners</a>
+<ul role="menu" class=" dropdown-menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12371" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12371"><a title="Partners Overview" href="https://www.gluu.org/partners-overview/" itemprop="url">Partners Overview</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12370" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12370"><a title="Service Partners" href="https://www.gluu.org/partners-service/" itemprop="url">Service Partners</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12369" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12369"><a title="Technology Partners" href="https://www.gluu.org/partners-technology/" itemprop="url">Technology Partners</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12358 dropdown"><a class="dropdown-toggle" title="Company" href="#" data-toggle="dropdown" aria-haspopup="true" itemprop="url">Company</a>
+<ul role="menu" class=" dropdown-menu">
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12359"><a title="Our Story" href="https://www.gluu.org/company/our-story/" itemprop="url">Our Story</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12360"><a title="Leadership" href="https://www.gluu.org/company/team/" itemprop="url">Leadership</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12361" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12361"><a title="Media Relations" href="https://www.gluu.org/company/media-relations/" itemprop="url">Media Relations</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13174"><a title="Blog" href="https://gluu.org/blog" itemprop="url">Blog</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12362" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12362"><a title="Contact Us" href="https://www.gluu.org/company/contact-us/" itemprop="url">Contact Us</a></li>
+</ul>
+</li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12383"><a title="Support Portal" href="https://support.gluu.org" itemprop="url">Support Portal</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-12437" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12437"><a title="Schedule a Call" href="https://gluu.org/booking" itemprop="url">Schedule a Call</a></li>
+</ul></div>
+        </div>
+    </nav>
+    <div class="main-wrapper print-only">
+
+        
+    
+<div class="fixedtop-wrapper">
+    
+        <div id="fixedtop">
+        <div class="fluid-container">
+            <div class="row">
+    		    <div class="col col-sm-12 search-row">
+    		         <div class="search-form-wrapper">
+    		            <form class="search-form" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction" method="get" action="https://www.gluu.org/" role="search"><meta itemprop="target" content="https://www.gluu.org/?s={s}"><label class="search-form-label screen-reader-text" for="searchform-59a40298e64391.37567440">Search this website</label><input itemprop="query-input" name="s" id="searchform-59a40298e64391.37567440" placeholder="Search this website …" type="search"><input value="Search" type="submit"></form>    		         </div>
+    		    </div>
+            </div>
+        </div>
+    </div><!--end #fixedtop-->
+        
+<header class="top-bar nav-panel">
+
+
+    <div class="top-bar-top hidden-xs">
+        <div class="container-fluid">
+            <div class="row"><!-- to hide use .top-nav-block-->
+                    <div class="col col-sm-12">
+                        <nav class="top-nav-wrapper">
+                                                        <div class="menu-top_nav-container"><ul id="menu-top_nav" class="top-nav"><li id="menu-item-12385" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12385"><a href="#">Products</a>
+<ul class="sub-menu">
+	<li id="menu-item-12386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12386"><a href="https://gluu.org/gluu-server">Gluu Server IAM Platform</a></li>
+	<li id="menu-item-12387" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12387"><a href="https://oxd.gluu.org">OXD Client Software</a></li>
+	<li id="menu-item-12388" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12388"><a href="https://super.gluu.org">Super Gluu 2FA App</a></li>
+</ul>
+</li>
+<li id="menu-item-11348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11348"><a href="https://www.gluu.org/resources/documents/">Resources</a>
+<ul class="sub-menu">
+	<li id="menu-item-12394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12394"><a href="https://www.gluu.org/resources/documents/">Documents</a></li>
+	<li id="menu-item-12395" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12395"><a href="https://www.gluu.org/resources/press-releases/">Press Releases</a></li>
+	<li id="menu-item-12396" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12396"><a href="https://www.gluu.org/resources/upcoming-events/">Upcoming Events</a></li>
+	<li id="menu-item-12397" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12397"><a href="https://www.gluu.org/resources/videos/">Videos</a></li>
+	<li id="menu-item-12403" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12403"><a href="https://support.gluu.org">Support Portal</a></li>
+</ul>
+</li>
+<li id="menu-item-11347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11347"><a href="https://www.gluu.org/partners-service/">Partners</a>
+<ul class="sub-menu">
+	<li id="menu-item-12400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12400"><a href="https://www.gluu.org/partners-overview/">Partners Overview</a></li>
+	<li id="menu-item-12399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12399"><a href="https://www.gluu.org/partners-service/">Service Partners</a></li>
+	<li id="menu-item-12398" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12398"><a href="https://www.gluu.org/partners-technology/">Technology Partners</a></li>
+</ul>
+</li>
+<li id="menu-item-12389" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12389"><a href="https://www.gluu.org/company/">Company</a>
+<ul class="sub-menu">
+	<li id="menu-item-12390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12390"><a href="https://www.gluu.org/company/our-story/">Our Story</a></li>
+	<li id="menu-item-12391" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12391"><a href="https://www.gluu.org/company/team/">Leadership</a></li>
+	<li id="menu-item-12392" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12392"><a href="https://www.gluu.org/company/media-relations/">Media Relations</a></li>
+	<li id="menu-item-13173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13173"><a href="https://gluu.org/blog">Blog</a></li>
+	<li id="menu-item-12393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12393"><a href="https://www.gluu.org/company/contact-us/">Contact Us</a></li>
+</ul>
+</li>
+<li id="menu-item-10644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10644"><a href="https://gluu.org/docs">Docs</a></li>
+</ul></div>
+                        </nav>        
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="top-bar-inner">    
+        <div class="hidden-xs container-fluid">
+    		
+            <div class="row">
+                <div class="col col-sm-2">
+                    <div class="front-logo">
+                        <a href="https://www.gluu.org">
+                        <img src="https://www.gluu.org/wp-content/themes/gluu/images/gl.png" class="img-responsive green-logo" width="150">
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-sm-10">
+                    
+                    <div class="row">
+                    <div class="col col-sm-12">
+                    <nav class="front-nav-wrapper">
+                                                <div class="menu-main_nav-container"><ul id="menu-main_nav" class="main-nav"><li id="menu-item-6197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6197"><a href="https://www.gluu.org/gluu-server/overview/" itemprop="url">Features</a></li>
+<li id="menu-item-12401" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12401"><a href="https://www.gluu.org/ce-roadmap/" itemprop="url">Roadmap</a></li>
+<li id="menu-item-12402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12402"><a href="https://www.gluu.org/cloud-identity/on-demand/gluu-edu/" itemprop="url">EDU</a></li>
+<li id="menu-item-5968" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5968"><a href="https://www.gluu.org/cloud-identity/on-demand/pricing/" itemprop="url">Pricing</a></li>
+<li id="menu-item-3148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3148 schedule-btn"><a href="http://www.gluu.org/deploy/" itemprop="url">Deploy Gluu</a></li>
+</ul></div>
+                    </nav>
+                    </div>
+                    </div>
+                </div>     
+            </div>
+        
+        </div><!-- .container-fluid-->
+    </div><!-- .top-bar-inner-->
+    
+    <div class="visible-xs container">    
+        <div class="row">
+            <div class="col col-sm-12">
+                <nav class="navbar navbar-default nav-panel" role="navigation">  
+                        <div class="navbar-header">
+            				<button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#myNavmenu">
+            					<span class="sr-only">Toggle navigation</span>
+            					<span class="icon-bar"></span>
+            					<span class="icon-bar"></span>
+            					<span class="icon-bar"></span>
+            				</button>
+                            <a class="navbar-brand" id="brand-name" href="https://www.gluu.org">
+                                <img src="https://www.gluu.org/wp-content/themes/gluu/images/logo.png" alt="gluu logo" height="46" width="118">
+                            </a>
+                        </div>			
+                </nav>
+            </div>
+        </div>		
+    </div><!-- .container-->
+
+</header><!-- top-bar nav-panel-->
+</div><!-- end .fixedtop-wrapper-->
+
+
+
+<div class="container main" id="info">
+	<div class="row">
+		<div class="col col-sm-8">	
+
+			
+					<article id="post-12832" class="post-12832 post type-post status-publish format-standard has-post-thumbnail category-videos video_type-webinars-on-demand solutions-single-sign-on-sso entry">
+    		<div class="to-resources-container">
+    			    								<a class="to-resources" href="https://www.gluu.org/resources/videos">Back to Videos</a>
+			</div>
+    		<h1>Gluu Webinar: The Client is NOT Always Right!</h1>
+
+
+<p><iframe src="https://www.youtube.com/embed/3IxWT0I-sTI" allowfullscreen="" height="315" frameborder="0" width="560"></iframe><noscript>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/3IxWT0I-sTI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</noscript></p>
+<p>A 25 minute overview of some of the things you should think about when you implement an OpenID Connect client. As a developer, you should be aware of the security features of OAuth and OpenID Connect that enable you to mitigate attacks. Slides can be found at: <a href="http://gluu.co/client-is-not-always-right">http://gluu.co/client-is-not-always-right</a>.</p>
+
+
+			<div class="related-videos-wrapper">
+<div class="rpbt_shortcode">
+<h3>Related videos:</h3>
+<div id="gallery-1" class="gallery related-gallery related-galleryid-12832 gallery-columns-2 gallery-size-video-thumb">
+    <figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a href="https://www.gluu.org/openid-connect-sso-using-oxd/" title="OpenID Connect SSO using oxd"><img src="https://www.gluu.org/wp-content/uploads/2017/02/openid-connect-sso-using-oxd-300x190.jpg" class="attachment-video-thumb size-video-thumb img-rounded img-responsive" alt="" aria-describedby="gallery-1-10264" height="190" width="300"></a>
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-1-10264">
+				OpenID Connect SSO using oxd
+				</figcaption>
+    </figure>
+    <figure class="gallery-item">
+			<div class="gallery-icon landscape">
+				<a href="https://www.gluu.org/shibboleth-saml-sso-using-the-gluu-server/" title="Shibboleth SAML SSO using the Gluu Server"><img src="https://www.gluu.org/wp-content/uploads/2014/08/shibboleth-saml-sso-using-the-gl-300x190.jpg" class="attachment-video-thumb size-video-thumb img-rounded img-responsive" alt="" aria-describedby="gallery-1-5633" height="190" width="300"></a>
+			</div>
+				<figcaption class="wp-caption-text gallery-caption" id="gallery-1-5633">
+				Shibboleth SAML SSO using the Gluu Server
+				</figcaption>
+    </figure>
+		</div>
+</div> 
+</div>
+
+			    	
+    	<div class="entry-meta">
+					</div><!-- .entry-meta -->
+	</article>    	
+    	
+	
+				<!--<nav class="nav-single inner-content">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="https://www.gluu.org/resources/documents/articles/jwt-is-not-an-authentication-protocol/" rel="prev"><span class="meta-nav">&larr;</span> JWT is NOT an authentication protocol</a></span>
+					<span class="nav-next"><a href="https://www.gluu.org/resources/documents/articles/oauth-vs-saml-vs-openid-connect/" rel="next">OAuth vs. SAML vs. OpenID Connect <span class="meta-nav">&rarr;</span></a></span>
+				</nav>--><!-- .nav-single -->
+
+				
+						
+            
+		</div><!-- .col-->
+		<div class="col col-sm-4 right-side-nav">
+						<div class="widget-area videos-sidebar" role="complementary">
+		<div class="first front-widgets">
+		<aside id="text-14" class="widget widget_text"><div class="widget-title">Join Us On Twitter!</div>			<div class="textwidget">            <iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 350px; padding: 0px; border: medium none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="642077174741266432" title="Twitter Timeline" frameborder="0"></iframe>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+		</aside><aside id="text-13" class="widget widget_text"><div class="widget-title">Newsletter Signup</div>			<div class="textwidget"><div class="widget-area"><script type="text/javascript">(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.1.2 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-6140 mc4wp-ajax" method="post" data-id="6140" data-name="Sign-Up form"><div class="mc4wp-form-fields"><div class="control">
+	<input id="mc4wp_email" class="form-control" name="EMAIL" placeholder="Enter your Email Address" required="" type="email">
+</div>
+	<input class="btn btn-success btn-block" value="Subscribe" type="submit">
+<div style="display: none;"><input name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" type="text"></div><input name="_mc4wp_timestamp" value="1503920724" type="hidden"><input name="_mc4wp_form_id" value="6140" type="hidden"><input name="_mc4wp_form_element_id" value="mc4wp-form-1" type="hidden"></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin --></div></div>
+		</aside> <!-- From widget cache in 0.0011 seconds (cwdgt-d71ea782ca0ec955c17a05677fa392a3) --><aside id="text-15" class="widget widget_text"><div class="widget-title">Join Us On YouTube!</div>			<div class="textwidget"><iframe src="https://www.youtube.com/subscribe_widget?p=GluuOrg" style="overflow: hidden; height: 105px; width: 100%; border: 0;" scrolling="no" frameborder="0">
+    </iframe><noscript>&lt;iframe src="https://www.youtube.com/subscribe_widget?p=GluuOrg" 
+       style="overflow: hidden; height: 105px; width: 100%; border: 0;" 
+       scrolling="no" frameBorder="0"&gt;
+    &lt;/iframe&gt;</noscript></div>
+		</aside> <!-- From widget cache in 0.0009 seconds (cwdgt-44a4e6a5720b96e3bed6391fdcf3ef0f) -->	</div><!-- .first -->
+	</div><!-- #secondary -->					</div>
+	</div><!-- .row-->
+	<div class="row">
+    	<div class="col-sm-12">
+    	            <div class="page-footer-buttons" style="clear:both;">
+				<div class="second-row text-center">
+					<a class="to-top" href="#info">Back to top</a>
+				</div>
+			</div>
+    	</div><!-- .col-->
+	</div><!-- .row-->
+</div><!-- .container-->
+
+		
+
+<footer class="main-footer">
+    <div class="container-fluid">
+    
+    <div class="row">
+        <div class="col col-md-2 social-links-wrapper">
+                        <div class="menu-footer_nav-container"><ul id="menu-footer_nav" class="footer-nav"><li id="menu-item-12129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12129"><a href="https://www.gluu.org/company/contact-us/">Contact Us</a></li>
+<li id="menu-item-7676" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7676"><a href="http://gluu.org/ce-roadmap">Roadmap</a></li>
+<li id="menu-item-3242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3242"><a title="Gluu Blog" href="http://www.gluu.org/blog/">Blog</a></li>
+<li id="menu-item-3247" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3247"><a title="Support Center" href="https://support.gluu.org/">Support</a></li>
+<li id="menu-item-5746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5746"><a title="Gluu Server Documentation" href="http://gluu.org/docs">Documentation</a></li>
+</ul></div>
+            <ul class="social-links hidden-xs hidden-sm">
+				<li>
+				    <a href="https://twitter.com/GluuFederation">
+    				    <i class="fa fa-twitter" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="https://www.youtube.com/user/GluuOrg">
+    				    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="http://www.linkedin.com/company/gluu-inc.">
+    				    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="http://www.slideshare.net/gluu">
+    				    <i class="fa fa-slideshare" aria-hidden="true"></i>
+				    </a>
+				</li>
+            </ul>
+        </div>
+        <div class="col col-md-6 col-md-offset-1 footer-widgets-wrap">
+			<div class="row">
+			    <div class="widget-area" role="complementary">
+		<div class="first front-widgets">
+		<style>
+.rpwe-block ul{list-style:none!important;margin-left:0!important;padding-left:0!important;}.rpwe-block li{border-bottom:1px solid #eee;margin-bottom:10px;padding-bottom:10px;list-style-type: none;}.rpwe-block a{display:inline!important;text-decoration:none;}.rpwe-block h3{background:none!important;clear:none;margin-bottom:0!important;margin-top:0!important;font-weight:400;font-size:12px!important;line-height:1.5em;}.rpwe-thumb{border:1px solid #EEE!important;box-shadow:none!important;margin:2px 10px 2px 0;padding:3px!important;}.rpwe-summary{font-size:12px;}.rpwe-time{color:#bbb;font-size:11px;}.rpwe-comment{color:#bbb;font-size:11px;padding-left:5px;}.rpwe-alignleft{display:inline;float:left;}.rpwe-alignright{display:inline;float:right;}.rpwe-aligncenter{display:block;margin-left: auto;margin-right: auto;}.rpwe-clearfix:before,.rpwe-clearfix:after{content:"";display:table !important;}.rpwe-clearfix:after{clear:both;}.rpwe-clearfix{zoom:1;}
+</style>
+	<aside id="rpwe_widget-3" class="col-sm-6 widget rpwe_widget recent-posts-extended"><div class="w-inner-wrapper"><div class="widget-title">Press Releases</div><div class="rpwe-block "><ul class="rpwe-ul"><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://www.gluu.org/press-releases/2017/kantara-awarded-2-4-million-to-develop-digital-identity-and-privacy-solutions-using-smartphones/" title="Permalink to Kantara Awarded $2.4 Million To Develop Digital Identity And Privacy Solutions Using Smartphones" rel="bookmark">Kantara Awarded $2.4 Million To Develop Digital Identity And Privacy Solutions Using Smartphones</a></h3><time class="rpwe-time published" datetime="2017-05-12T10:20:44+00:00">May 12, 2017</time></li><li class="rpwe-li rpwe-clearfix"><h3 class="rpwe-title"><a href="https://www.gluu.org/press-releases/2017/gluu-server-3-0-includes-support-for-the-latest-shibboleth-idp-and-openldap/" title="Permalink to Gluu Server v3 includes support for Shibboleth v3 and OpenLDAP" rel="bookmark">Gluu Server v3 includes support for Shibboleth v3 and OpenLDAP</a></h3><time class="rpwe-time published" datetime="2017-02-28T13:53:59+00:00">February 28, 2017</time></li></ul></div><!-- Generated by http://wordpress.org/plugins/recent-posts-widget-extended/ --></div><a class="view-all-link" href="http://www.gluu.org/resources/press-releases/">View All</a><a class="view-all-link" href="http://www.gluu.org/resources/press-releases/">View All</a></aside> <!-- From widget cache in 0.0013 seconds (cwdgt-ebe19fe6349fc915b9aa569f28ca0449) --><aside id="reallysimpletwitterwidget-3" class="col-sm-6 widget widget_reallysimpletwitterwidget"><div class="w-inner-wrapper"><div class="widget-title">Last Tweets</div>
+			<ul class="really_simple_twitter_widget"><li>The Gluu Daily is out! <a href="https://t.co/kRynkpGDT5" class="twitter-link">https://t.co/kRynkpGDT5</a> Stories via <a href="http://twitter.com/badgedirectory" class="twitter-user">@badgedirectory</a> @codeproject<span class="rstw_comma">,</span> <span class="twitter-timestamp" title="2017/08/27 18:37">17 hours ago</span></li><li>The Gluu Daily is out! <a href="https://t.co/1Yp8qB05GN" class="twitter-link">https://t.co/1Yp8qB05GN</a><span class="rstw_comma">,</span> <span class="twitter-timestamp" title="2017/08/26 18:37">Aug 26</span></li></ul></div><a class="twitter-follow-link" href="https://twitter.com/GluuFederation">Follow Us</a><a class="twitter-follow-link" href="https://twitter.com/GluuFederation">Follow Us</a></aside>	</div><!-- .first -->
+	</div><!-- #secondary -->			</div>
+        </div>
+        <div class="col col-md-3 question-container">
+            <div class="social-links-wrapper visible-xs visible-sm">
+            <ul class="social-links">
+				<li>
+				    <a href="https://twitter.com/GluuFederation">
+    				    <i class="fa fa-twitter" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="https://www.youtube.com/user/GluuOrg">
+    				    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="http://www.linkedin.com/company/gluu-inc.">
+    				    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+				    </a>
+				</li>
+				<li>
+				    <a href="http://www.slideshare.net/gluu">
+    				    <i class="fa fa-slideshare" aria-hidden="true"></i>
+				    </a>
+				</li>
+            </ul>
+            </div>
+            <div class="inner-wrapper">
+    			<h4>Questions?</h4>
+    			<ul class="footer-btns">
+                   <li>
+                       <a href="http://gluu.org/booking" class="solid greenHaze-btn">
+        			    Schedule a meeting
+                        </a>
+                   </li>
+                   <li>
+        			    <a href="#" class="solid cerulean2-btn">
+        			    Visit Gluu support
+        			    </a>
+                   </li>
+    			</ul>
+    			<div class="subscribe-wrap">
+        			<h3 class="text-center">Join Our Newsletter</h3>
+                    <script type="text/javascript">(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.1.2 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-6140 mc4wp-ajax" method="post" data-id="6140" data-name="Sign-Up form"><div class="mc4wp-form-fields"><div class="control">
+	<input id="mc4wp_email" class="form-control" name="EMAIL" placeholder="Enter your Email Address" required="" type="email">
+</div>
+	<input class="btn btn-success btn-block" value="Subscribe" type="submit">
+<div style="display: none;"><input name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" type="text"></div><input name="_mc4wp_timestamp" value="1503920793" type="hidden"><input name="_mc4wp_form_id" value="6140" type="hidden"><input name="_mc4wp_form_element_id" value="mc4wp-form-1" type="hidden"></div><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin -->                </div>
+            </div>
+		</div>
+    </div>
+    </div>
+    
+    <hr class="bottom-footer-line">
+        
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col col-sm-12 text-center-lmd">
+            <ul class="copyright-list">
+                <li>@ 2009-2017 Gluu, Inc.</li>
+                <li><a href="https://www.gluu.org/terms">Terms</a></li>
+                <li><a href="https://www.gluu.org/privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    
+</footer>
+
+</div>
+
+<!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+<!--<script type="text/javascript" src="js/jquery.webui-popover.js"></script>-->
+<script type="text/javascript" src="js/bootstrap-select.js"></script>
+<!--<script type="text/javascript" src="js/listgroup.js"></script>-->
+<script type="text/javascript" src="js/ie-row-fix.js"></script>
+<!--<script src="js/typed.js"></script>-->
+<!--<script type="text/javascript" src="js/wpcustom.js"></script>-->    
+<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>   
+<script type="text/javascript" src="js/jquery.color.js"></script>
+
+<!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+
+
+</body>
+
+</html>

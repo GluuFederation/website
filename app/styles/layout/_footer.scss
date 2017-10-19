@@ -1,0 +1,257 @@
+/*
+    Footer styles
+*/
+
+/*footer*/
+
+.main-footer{
+    padding-top:53px;
+    @media (min-width: $screen-md) {
+        padding-top:76px;
+    }
+    padding-bottom:28px;
+    background-color:$concrete;
+    font-family: 'Lato', sans-serif;
+    li{
+        color: $mineShaft;
+    }
+    .rpwe-ul h3{
+        font-weight:300;
+    }
+    .rpwe-ul .rpwe-time{
+        color: $mineShaft;
+        font-size:16px;
+        font-weight:300;
+    }
+    .rpwe-ul li,
+    ul.really_simple_twitter_widget li{
+        border-top:1px solid $mineShaft;
+        padding-top:20px;
+        &:first-child{
+            border-top:none;
+            padding-top:0px;
+        }
+    }
+    .rpwe-ul li{
+        margin-bottom:16px;
+    }
+    ul.really_simple_twitter_widget li{
+        margin-bottom:27px;
+    }
+    .really_simple_twitter_widget{
+        li{
+            color: $mineShaft;
+            font-weight:300;
+        }
+    }
+    a{
+        &:link, &:hover, &:active, &:visited{
+            color: $mineShaft;
+        }
+    }
+    .bondiBlue-btn, .blue-btn{
+        font-family: 'Karla';
+        font-size:15px;
+        &:link, &:hover, &:active, &:visited{
+            color:#fff;
+        }
+    }
+}
+footer{
+    .top-footer-line{
+        border:none;
+        margin:0;
+        margin-top:57px; 
+        margin-bottom:34px;
+        background-color:#d0d0d0;
+        height:1px;
+    }
+    .bottom-footer-line{
+        border:none;
+        margin:0;
+        margin-top:44px; 
+        margin-bottom:20px;
+        background-color:#bbbbbb;
+        height:1px;
+    }
+    .social-links-wrapper{
+        @media (max-width: $screen-md) {
+            margin-bottom:56px;
+        }
+        text-align:center;
+            @media (min-width: $screen-md) {
+                text-align:left;
+            }
+        }
+	.social-links{
+	    @include reset-margin-padding();
+	    display:inline-block;
+	    }
+    .social-links{
+	    overflow:hidden; 
+	    border:0px solid black; 
+	    padding-top:13px;
+	    }
+    .social-links li{
+        display:inline-block; 
+        margin-left:10px; 
+        float:left;
+            a{
+                display:block;
+            }
+            i{
+                font-size:22px;
+                color:#898989;
+            }
+        }
+    .social-links li:first-child{
+        margin-left:0;
+        }
+
+    .footer-nav a:link, .footer-nav a:active, .footer-nav a:visited, .to-top:link, .to-top:active, .to-resources:link, .to-resources:active, .to-resources:visited, .back-top:link, .back-top:active, .back-top:visited{
+    color: $mineShaft;
+    }
+    .footer-nav li{
+    font-family: 'Lato', sans-serif; 
+    border:0px solid black; 
+    padding:0; 
+    line-height:1em; 
+    margin-bottom:19px; 
+    font-size:16px;
+    font-weight:300;
+    }
+    .footer-nav{
+    @include reset-margin-padding();
+    text-align:center;
+        @media (min-width: $screen-md) {
+            text-align:left;
+        }
+    }
+    
+    .widget-title{
+    color: $mineShaft;
+    font-size:18px;
+    font-weight:300; 
+    padding-bottom:26px;
+    }
+    .widget_latest_tweets_widget, .recent-posts-extended{
+    position:relative;
+    }
+    .twitter-follow-link, .view-all-link{
+    @media (max-width: $screen-md) {
+        display:none;
+    }
+    position:absolute; 
+    top:4px;
+    right:18px; 
+    font-size:12px;
+    font-weight:300;
+        @media (min-width: $screen-sm) {
+            //right:0px; 
+            font-size:10px;
+        }
+        @media (min-width: $screen-md) {
+            right:18px; 
+            font-size:12px;
+        }
+        &:link, &:hover, &:active, &:visited{
+            color: $mineShaft;
+        }
+        
+    }
+    .question-container h4{
+        font-size:18px;
+        font-weight:300;
+        color: $mineShaft;  
+        margin:0;
+    }
+    .inner-wrapper{
+        text-align:center;
+        @media (min-width: $screen-md) {
+            float:right;
+            max-width:197px;
+            
+        }
+    }
+    .footer-btns{
+        list-style-type:none;
+        margin:36px 0 0 0;
+        padding:0;
+        li{
+            margin-bottom:22px;
+        }
+        a{
+            width:100%;
+            max-width:197px;
+        }
+    }
+    .copyright-list{
+        font-size:12px;
+        overflow:hidden;
+        display:inline-block;
+        @media (min-width: $screen-md) { 
+            float:left;
+        }
+        color: $mineShaft;
+        padding:0;
+        font-size:14px;
+        font-weight:300;
+        a{
+            &:link, &:hover, &:active, &:visited{
+                color: $mineShaft;
+            }
+        }
+        li{
+            display:inline-block; 
+            float:left; 
+            margin-left:17px;
+            &:first-child{
+                margin-left:0;
+            }
+        }
+    }
+    .footer-widgets-wrap{
+        @media (max-width: $screen-md) {
+            margin-top:43px;
+            margin-bottom:20px;
+            aside:first-of-type{
+                margin-bottom:55px;
+            }
+        }
+        .w-inner-wrapper{
+            text-align:center;
+            max-width:325px;
+            margin:0 auto;
+            h3{
+                text-align:center;
+            }
+            @media (min-width: $screen-sm){
+                text-align:left;
+                h3{
+                    text-align:left;
+                }
+            }
+            @media (min-width: $screen-md){
+                margin:0;
+            }
+        }
+    }
+    .widget-area{
+        .rpwe-ul,
+        .really_simple_twitter_widget{
+            margin-top:0;
+        }
+    }
+    
+}
+
+.image-right{
+    width:100%; 
+    float:none; 
+    margin:0;
+    @media (min-width: $screen-sm) {
+        width:293px; 
+        float:right; 
+        margin:0 0 10px 20px;
+    }
+}

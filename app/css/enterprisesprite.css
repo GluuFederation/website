@@ -1,0 +1,32 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+.enterprise-sprite, .enterprise-am_icon, .enterprise-di_icon, .enterprise-e_icon, .enterprise-mfa_icon, .enterprise-sso_icon, .enterprise-um_icon {
+  background-image: url('../images/enterprise-s7801559161.png');
+  background-repeat: no-repeat;
+}
+
+.enterprise-am_icon {
+  background-position: 0 -123px;
+}
+
+.enterprise-di_icon {
+  background-position: -26px -101px;
+}
+
+.enterprise-e_icon {
+  background-position: -51px -76px;
+}
+
+.enterprise-mfa_icon {
+  background-position: -79px -51px;
+}
+
+.enterprise-sso_icon {
+  background-position: -101px -27px;
+}
+
+.enterprise-um_icon {
+  background-position: -119px 0;
+}
