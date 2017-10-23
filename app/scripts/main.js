@@ -820,7 +820,9 @@ $('.panel').on('hide.bs.collapse', function(){
 
 }
 
-
+if($('.lazy').length > 0){
+    $('.lazy').lazy({threshold: 200});
+}
 /*if ($('.scrollbox').length > 0) {
 $('.scrollbox').enscroll({
 	showOnHover: true,
@@ -974,7 +976,4 @@ $(document).on('sf:ajaxfinish', '.searchandfilter', function(){
             }
         });
     }*/
-if($('.lazy').length > 0){
-    $('.lazy').lazy();
-}
 });
