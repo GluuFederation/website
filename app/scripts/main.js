@@ -974,4 +974,7 @@ $(document).on('sf:ajaxfinish', '.searchandfilter', function(){
             }
         });
     }*/
+if($('.lazy').length > 0){
+    $('.lazy').lazy();
+}
 });
