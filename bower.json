@@ -1,0 +1,43 @@
+{
+  "name": "website",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "modernizr": "~2.8.1",
+    "bootstrap": "4.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "scss/_functions.scss",
+        "scss/_variables.scss",
+        "scss/_custom.scss",
+        "scss/_mixins.scss",
+        "scss/_reboot.scss",
+        "scss/_type.scss",
+        "scss/_images.scss",
+        "scss/_grid.scss",
+        "scss/_forms.scss",
+        "scss/_buttons.scss",
+        "scss/_transitions.scss",
+        "scss/_dropdown.scss",
+        "scss/_button-group.scss",
+        "scss/_nav.scss",
+        "scss/_navbar.scss",
+        "scss/_card.scss",
+        "scss/_breadcrumb.scss",
+        "scss/_pagination.scss",
+        "scss/_badge.scss",
+        "scss/_alert.scss",
+        "scss/_modal.scss",
+        "scss/_tooltip.scss",
+        "scss/_utilities.scss",
+        "dist/js/bootstrap.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}

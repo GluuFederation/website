@@ -1,0 +1,54 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/_functions.scss";
+@import "bower_components/bootstrap/scss/_variables.scss";
+@import "bower_components/bootstrap/scss/_custom.scss";
+@import "bower_components/bootstrap/scss/_mixins.scss";
+@import "bower_components/bootstrap/scss/_reboot.scss";
+@import "bower_components/bootstrap/scss/_type.scss";
+@import "bower_components/bootstrap/scss/_images.scss";
+@import "bower_components/bootstrap/scss/_grid.scss";
+@import "bower_components/bootstrap/scss/_forms.scss";
+@import "bower_components/bootstrap/scss/_buttons.scss";
+@import "bower_components/bootstrap/scss/_transitions.scss";
+@import "bower_components/bootstrap/scss/_dropdown.scss";
+@import "bower_components/bootstrap/scss/_button-group.scss";
+@import "bower_components/bootstrap/scss/_nav.scss";
+@import "bower_components/bootstrap/scss/_navbar.scss";
+@import "bower_components/bootstrap/scss/_card.scss";
+@import "bower_components/bootstrap/scss/_breadcrumb.scss";
+@import "bower_components/bootstrap/scss/_pagination.scss";
+@import "bower_components/bootstrap/scss/_badge.scss";
+@import "bower_components/bootstrap/scss/_alert.scss";
+@import "bower_components/bootstrap/scss/_modal.scss";
+@import "bower_components/bootstrap/scss/_tooltip.scss";
+@import "bower_components/bootstrap/scss/_utilities.scss";
+// endbower
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
